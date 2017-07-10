@@ -10,9 +10,6 @@ function request() {
     url: "/items"
   })
     .then(listMarket => {
-      $("#listMarket").remove();
-      $(".items").append("<div id='listMarket' class='listMarket'></div>");
-      $(".loading").remove();
-      $(".listMarket").append(listMarket);
+      $("#listMarket").html(listMarket);
     });
 }
