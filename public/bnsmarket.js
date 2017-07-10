@@ -1,8 +1,10 @@
 $("#main").append("<div class='items'></div>");
 $(".items").append("<div id='listMarket' class='listMarket'><span class='loading'>Loading items</span></div>");
 
+request();
+setInterval(request, 10000);
 
-setInterval(() => {
+function request() {
   $.ajax({
     type: "GET",
     url: "/items"
@@ -13,4 +15,4 @@ setInterval(() => {
       $(".loading").remove();
       $(".listMarket").append(listMarket);
     });
-}, 10000);
+}
