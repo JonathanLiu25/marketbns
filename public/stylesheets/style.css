@@ -1,0 +1,269 @@
+tr .text {
+  width: 100%;
+}
+
+.listMarket {
+  display: table;
+  table-layout: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #DCDCDC;
+  border-radius: 16px;
+}
+
+
+/* icon box/border  */
+
+.iconCell {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+}
+
+tr .text,
+.price {
+  border-radius: 20px;
+}
+
+
+/*junk*/
+
+.grade_1 {
+  color: #6c6c6c
+}
+
+
+/*common*/
+
+.grade_2 {
+  color: #d7e7d6
+}
+
+
+/*refined*/
+
+.grade_3 {
+  color: #6dba69
+}
+
+
+/*superior*/
+
+.grade_4 {
+  color: #5698e1
+}
+
+
+/*heroic*/
+
+.grade_5 {
+  color: #d756e1
+}
+
+
+/*legendary*/
+
+.grade_6 {
+  color: #dd893e
+}
+
+
+/*no idea*/
+
+.grade_7 {
+  color: #FF770A
+}
+
+
+/*no idea*/
+
+.grade_8 {
+  color: #8A7AFF
+}
+
+
+/*Change cell color on mouseover*/
+
+tr:hover td,
+tr:hover th {
+  background: grey;
+}
+
+
+/* cell background,round edges */
+
+td {
+  /* generic info on name/additional info */
+  position: relative;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 400;
+  white-space: nowrap;
+  background: #595959;
+  margin: 0;
+  padding: 0;
+}
+
+tr {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.listMarket tbody td .name {
+  /*item name */
+  display: block;
+  overflow: hidden;
+  font-size: 19px;
+  text-transform: initial;
+  text-align: left;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.listMarket tbody td .attribute {
+  /* That one is for gems, the extra text n stuff  */
+  display: block;
+  padding: 1px 0 0;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  hyphens: auto;
+  text-align: left;
+}
+
+
+/*amount number*/
+
+td .num {
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+  text-align: right;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Droid Sans", Arial, Helvetica, Sans-serif, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
+}
+
+.price {
+  padding: 0 10px;
+  margin: 0;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.total,
+.unit {
+  height: 15px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.total>span:first-child,
+.unit>span:first-child {
+  width: auto
+}
+
+.price dl dt {
+  display: none
+}
+
+.listMarket tbody td .name.noneAttribute {
+  padding-top: 2px
+}
+
+.price span>span {
+  /*price icons, do not edit*/
+  width: 15px;
+  height: 15px;
+  margin: -1px 0 0 -3px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("http://static.ncsoft.com/ingame/bns/market_v2/icons.png") no-repeat;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  z-index: 5;
+}
+
+.price .gold>span {
+  background-position: 0 -28px
+}
+
+.price .silver>span {
+  background-position: -15px -28px
+}
+
+.price .bronze>span {
+  background-position: -30px -28px
+}
+
+.gold .silver .bronze {
+  color: #fffa90;
+}
+
+tr .text {
+  width: 100%;
+}
+
+.name,
+.attribute,
+.price,
+.iconCell,
+td,
+tr,
+.listMarket,
+img,
+tbody {
+  vertical-align: middle;
+}
+
+
+/*TABLE STUFF BELOW*/
+
+.listMarket {
+  display: table;
+  table-layout: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #DCDCDC;
+  border-radius: 10px;
+  border: 5px solid #DCDCDC;
+  border-collapse: separate;
+  border-spacing: 14px 10px;
+}
+
+.iconImg {
+  /*icon */
+  margin: 0;
+  border-radius: 10px;
+  max-width: none !important;
+  width: 46px !important;
+  height: 46px !important;
+}
+
+
+/* icon box/border  */
+
+tr .text,
+.price {
+  border-radius: 10px;
+}
+
+tr:not(.show) {
+  display: none;
+}
+
+.items {
+  text-align: center;
+  margin: 20px;
+}
