@@ -264,6 +264,12 @@ tr:not(.show) {
 }
 
 .items {
-  text-align: center;
   margin: 20px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 19px;
+  color: white;
+  padding: 10px;
 }

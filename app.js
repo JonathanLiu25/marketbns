@@ -2,6 +2,8 @@ const express = require("express");
 const { resolve } = require("path");
 const request = require("request");
 const { JSDOM } = require("jsdom");
+const html2json = require("html2json").html2json;
+const json2html = require("html2json").json2html;
 
 const app = express();
 
@@ -14,6 +16,8 @@ app.use(express.static(resolve(__dirname, "public")));
 
 let lastRequestTime;
 let text = [];
+// tempText overwrites text before sending response; this is to prevent empty text array when requesting for items
+let tempText = [];
 
 app.get("/items", (req, res, next) => {
   // waits 9 seconds before making another request
@@ -22,7 +26,7 @@ app.get("/items", (req, res, next) => {
     res.send(text);
   } else {
     lastRequestTime = Date.now();
-    text = [];
+    tempText = [];
     const requests = url.map((item, itemIdx) => {
       return new Promise(resolveCb => {
         newRequest(item, itemIdx, resolveCb);
@@ -31,7 +35,8 @@ app.get("/items", (req, res, next) => {
 
     Promise.all(requests)
       .then(() => {
-        res.send(text);
+        text = tempText;
+        res.send([text, html2json(text.join(""))]);
       })
       .catch((err) => {
         next(err);
@@ -50,7 +55,7 @@ function newRequest(item, itemIdx, resolveCb) {
       if (listMarket.getElementsByClassName("emptyResult").length) {
         newRequest(item, itemIdx, resolveCb);
       } else {
-        text[itemIdx] = listMarket.innerHTML;
+        text[itemIdx] = listMarket.innerHTML.replace(/\n[\s]*/g, "");
         resolveCb();
       }
     }
