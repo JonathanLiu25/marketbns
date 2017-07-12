@@ -47,7 +47,7 @@ app.get("/items", (req, res, next) => {
 function newRequest(item, itemIdx, resolveCb) {
   request(item, (err, response, body) => {
     if (err) {
-      text[itemIdx] = err;
+      tempText[itemIdx] = err;
       resolveCb();
     } else {
       const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
@@ -55,7 +55,7 @@ function newRequest(item, itemIdx, resolveCb) {
       if (listMarket.getElementsByClassName("emptyResult").length) {
         newRequest(item, itemIdx, resolveCb);
       } else {
-        text[itemIdx] = listMarket.innerHTML.replace(/\n[\s]*/g, "");
+        tempText[itemIdx] = listMarket.innerHTML.replace(/\n[\s]*/g, "");
         resolveCb();
       }
     }
