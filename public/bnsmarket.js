@@ -10,11 +10,7 @@ function request() {
     url: "/items"
   })
     .then(result => {
-      $("#listMarket").html(result[0]);
-      for (var i = 0; i < result[1].child.length; i++) {
-        // results -> items -> 1st row of the item (displayed row) -> 3rd child for price -> 1st child for unit price
-        console.log(result[1].child[i].child[0].child[2].child[0]);
-      }
+      $("#listMarket").html(result);
     })
     .catch(err => console.error(err));
 }

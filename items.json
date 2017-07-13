@@ -1,21 +1,81 @@
 {
-  "exactItems": [
-    "Masterwork Soul Shield Primer Design",
-    "Sealed Stone of Wisdom",
-    "Premium Kaolin Refiner",
-    "Elysian Orb",
-    "Sealed Forging Orb",
-    "Radiant Energy",
-    "Triumph Token",
-    "Silverfrost Premium Transformation Stone",
-    "Soulstone",
-    "Evolved Stone",
-    "Moonstone",
-    "Gem Hammer",
-    "Silverfrost Transformation Stone"
-  ],
-  "nonExactItems": [
-    "Soul Warden's Emblem",
-    "Sealed Silverfrost Soul Warden Critical Soul Shield Primer"
-  ]
+  "exactItems": {
+    "Masterwork Soul Shield Primer Design": {
+      "gold": 10,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Sealed Stone of Wisdom": {
+      "gold": 10,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Premium Kaolin Refiner": {
+      "gold": 3,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Elysian Orb": {
+      "gold": 7,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Sealed Forging Orb": {
+      "gold": 80,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Radiant Energy": {
+      "gold": 9,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Triumph Token": {
+      "gold": 5,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Silverfrost Premium Transformation Stone": {
+      "gold": 230,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Soulstone": {
+      "gold": 0,
+      "silver": 15,
+      "bronze": 0
+    },
+    "Evolved Stone": {
+      "gold": 7,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Moonstone": {
+      "gold": 2,
+      "silver": 50,
+      "bronze": 0
+    },
+    "Gem Hammer": {
+      "gold": 0,
+      "silver": 60,
+      "bronze": 0
+    },
+    "Silverfrost Transformation Stone": {
+      "gold": 9,
+      "silver": 0,
+      "bronze": 0
+    }
+  },
+  "nonExactItems": {
+    "Soul Warden's Emblem": {
+      "gold": 30,
+      "silver": 0,
+      "bronze": 0
+    },
+    "Sealed Silverfrost Soul Warden Critical Soul Shield Primer": {
+      "gold": 220,
+      "silver": 0,
+      "bronze": 0
+    }
+  }
 }

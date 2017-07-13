@@ -267,6 +267,10 @@ tr:not(.show) {
   margin: 20px;
 }
 
+.buyNow {
+  background-color: green;
+}
+
 .loading {
   text-align: center;
   font-size: 19px;
