@@ -1,12 +1,12 @@
 {
   "exactItems": {
     "Masterwork Soul Shield Primer Design": {
-      "gold": 10,
+      "gold": 11,
       "silver": 0,
       "bronze": 0
     },
     "Sealed Stone of Wisdom": {
-      "gold": 10,
+      "gold": 8,
       "silver": 0,
       "bronze": 0
     },
@@ -32,7 +32,7 @@
     },
     "Triumph Token": {
       "gold": 5,
-      "silver": 0,
+      "silver": 10,
       "bronze": 0
     },
     "Silverfrost Premium Transformation Stone": {
@@ -46,7 +46,7 @@
       "bronze": 0
     },
     "Evolved Stone": {
-      "gold": 7,
+      "gold": 6,
       "silver": 0,
       "bronze": 0
     },
@@ -61,7 +61,7 @@
       "bronze": 0
     },
     "Silverfrost Transformation Stone": {
-      "gold": 9,
+      "gold": 10,
       "silver": 0,
       "bronze": 0
     }
@@ -73,7 +73,7 @@
       "bronze": 0
     },
     "Sealed Silverfrost Soul Warden Critical Soul Shield Primer": {
-      "gold": 220,
+      "gold": 200,
       "silver": 0,
       "bronze": 0
     }
