@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "react", ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"],
+        "node": "current"
+      },
+      "debug": false,
+      "useBuiltIns": true
+    }],
+    "es2015"
+  ]
+}
