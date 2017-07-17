@@ -1,5 +1,10 @@
 {
   "exactItems": {
+    "Sealed Silverfrost Soul Warden Critical Soul Shield Primer": {
+      "gold": 200,
+      "silver": 0,
+      "bronze": 0
+    },
     "Masterwork Soul Shield Primer Design": {
       "gold": 11,
       "silver": 0,
@@ -69,11 +74,6 @@
   "nonExactItems": {
     "Soul Warden's Emblem": {
       "gold": 30,
-      "silver": 0,
-      "bronze": 0
-    },
-    "Sealed Silverfrost Soul Warden Critical Soul Shield Primer": {
-      "gold": 200,
       "silver": 0,
       "bronze": 0
     }
