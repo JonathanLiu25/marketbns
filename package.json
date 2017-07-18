@@ -8,8 +8,7 @@
     "test-watch": "npm run test -- --watch --reporter=min",
     "start": "node app.js",
     "build": "webpack",
-    "dev": "nodemon app.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
