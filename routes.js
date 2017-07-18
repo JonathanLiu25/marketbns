@@ -4,26 +4,25 @@ const { JSDOM } = require("jsdom");
 const html2json = require("html2json").html2json;
 const Items = require("./models/Items");
 
-let lastRequestTime;
+// start request time but set it back 10000 ms
+let lastRequestTime = Date.now() - 10000;
 let text = [];
 let tempText = [];
 
 router.get("/", (req, res, next) => {
   // waits 9 seconds before making another request
   // client sends a request every 10 seconds, but 9 seconds is to account for latency
-  if (lastRequestTime && (Date.now() - lastRequestTime < 9000)) {
+  if (Date.now() - lastRequestTime < 9000) {
     res.send(text);
   } else {
+    lastRequestTime = Date.now();
+    tempText = [];
+
     Items.findAll()
       .then(allItems => {
-        const url = allItems.map(item => `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`);
-
-        lastRequestTime = Date.now();
-        tempText = [];
-        const requests = url.map((item, itemIdx) => {
-          return new Promise(resolveCb => {
-            newRequest(item, itemIdx, resolveCb);
-          });
+        const requests = allItems.map(item => {
+          const url = `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`;
+          return new Promise(resolveCb => newRequest(url, item, resolveCb));
         });
 
         Promise.all(requests)
@@ -80,41 +79,42 @@ router.delete("/:name", (req, res, next) => {
     .catch(next);
 });
 
-function newRequest(item, itemIdx, resolveCb) {
-  request(item, (err, response, body) => {
+function newRequest(url, item, resolveCb) {
+  request(url, (err, response, body) => {
     if (err) {
-      tempText[itemIdx] = err;
+      tempText[item.id - 1] = err;
       resolveCb();
     } else {
       const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
       if (listMarket.getElementsByClassName("emptyResult").length) {
-        newRequest(item, itemIdx, resolveCb);
+        newRequest(url, item, resolveCb);
       } else {
         const marketHTML = listMarket.innerHTML.replace(/\n[\s]*/g, "");
-        convertToObject(marketHTML, itemIdx);
+        convertToObject(marketHTML, item);
         resolveCb();
       }
     }
   });
 }
 
-function convertToObject(marketHTML, itemIdx) {
+function convertToObject(marketHTML, item) {
   const marketObject = html2json(marketHTML);
   const rows = marketObject.child[0].child;
   const tBody = [];
 
   for (var i = 0; i < rows.length; i++) {
     tBody[i] = {
-      show: i === 0,
-      grade: rows[i].child[1].attr.class[1],
-      src: rows[i].child[0].child[0].attr.src,
+      info: item,
+      show: i === 0, // show the first row
+      grade: rows[i].child[1].attr.class[1], // determines item text color
+      src: rows[i].child[0].child[0].attr.src, // image source
       alt: Array.isArray(rows[i].child[0].child[0].attr.alt) ? rows[i].child[0].child[0].attr.alt.join(" ") : rows[i].child[0].child[0].attr.alt,
       amount: rows[i].child[0].child[1] ? rows[i].child[0].child[1].child[0].text : 1,
       price: getPrice(rows[i].child[2])
     };
   }
 
-  tempText[itemIdx] = tBody;
+  tempText[item.id - 1] = tBody;
 }
 
 function getPrice(prices) {

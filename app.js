@@ -15,7 +15,7 @@ app.use(express.static(resolve(__dirname, "public")));
 const port = process.env.PORT || 3000;
 
 if (module === require.main) {
-  const force = true;
+  const force = false;
   models.db.sync({ force });
 
   const server = app.listen(port, () => {

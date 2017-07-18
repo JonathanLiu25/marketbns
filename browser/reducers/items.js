@@ -26,8 +26,16 @@ function itemsRequest(dispatch) {
 export const addItem = item =>
   dispatch =>
     axios.post("/items", item)
-      // .then(res => res.data)
-      // .then(newItem => console.log("new item", newItem))
+      .catch(console.error);
+
+export const changeItem = item =>
+  dispatch =>
+    axios.put(`/items/${item.id}`, item)
+      .catch(console.error);
+
+export const deleteItem = itemId =>
+  dispatch =>
+    axios.delete(`/items/${itemId}`)
       .catch(console.error);
 
 // REDUCER
