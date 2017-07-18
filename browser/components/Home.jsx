@@ -19,10 +19,12 @@ class LocalContainer extends React.Component {
 const Home = props => (
   <div className="items">
     <table id="listMarket" className="listMarket">
-      {props.allItems.length ?
-        props.allItems.map((items, itemIdx) => <ItemBody items={items} key={`item-body-${itemIdx}`} />)
-        :
-        <Loading />
+      {
+        props.allItems.length
+          ?
+          props.allItems.map((items, itemIdx) => <ItemBody items={items} key={`item-body-${itemIdx}`} />)
+          :
+          <Loading />
       }
     </table>
   </div>
@@ -35,17 +37,3 @@ const mapDispatchToProps = { getItems };
 const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 
 export default HomeContainer;
-
-// request();
-// setInterval(request, 10000);
-
-// function request() {
-//   $.ajax({
-//     type: "GET",
-//     url: "/items"
-//   })
-//     .then(result => {
-//       $("#listMarket").html(result);
-//     })
-//     .catch(err => console.error(err));
-// }
