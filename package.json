@@ -10,7 +10,7 @@
     "build": "webpack",
     "build-watch": "npm run build -- -w",
     "dev": "nodemon app.js",
-    "postinstall": "webpack -p --config webpack.prod.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +29,7 @@
     "html2json": "^1.0.2",
     "jsdom": "^11.1.0",
     "pg": "^6.4.1",
-    "pg-native": "^2.0.1",
+    "pg-native": "^1.10.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -40,7 +40,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "request": "^2.81.0",
-    "sequelize": "^4.3.2",
+    "sequelize": "^4.2.1",
     "webpack": "^3.3.0"
   },
   "devDependencies": {
