@@ -18,7 +18,7 @@ const config = {
       loader: "babel-loader" // config in .babelrc
     }]
   },
-  plugins: [new LiveReloadPlugin({ appendScriptTag: true })]
+  plugins: process.env.NODE_ENV !== "production" ? [new LiveReloadPlugin({ appendScriptTag: true })] : []
 };
 
 module.exports = config;
