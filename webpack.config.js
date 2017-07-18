@@ -1,6 +1,6 @@
 const LiveReloadPlugin = require("webpack-livereload-plugin");
 
-module.exports = {
+const config = {
   entry: "./browser/main.jsx",
   output: {
     path: __dirname,
@@ -20,3 +20,5 @@ module.exports = {
   },
   plugins: [new LiveReloadPlugin({ appendScriptTag: true })]
 };
+
+module.exports = config;

@@ -35,7 +35,8 @@ app.get("/items", (req, res, next) => {
     Promise.all(requests)
       .then(() => {
         text = tempText.join("");
-        res.send(text);
+        const testText = tempText;
+        res.send(testText);
       })
       .catch((err) => {
         next(err);
@@ -77,7 +78,8 @@ function checkCost(marketHTML, itemIdx) {
   if (itemCost <= buyCost) {
     marketObject.child[0].child[0].child[2].attr.class += " buyNow";
   }
-  tempText[itemIdx] = json2html(marketObject);
+  tempText[itemIdx] = marketObject;
+  // tempText[itemIdx] = json2html(marketObject);
 }
 
 const port = process.env.PORT || 3000;
