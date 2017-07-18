@@ -1,5 +1,3 @@
-const LiveReloadPlugin = require("webpack-livereload-plugin");
-
 const config = {
   entry: "./browser/main.jsx",
   output: {
@@ -18,7 +16,7 @@ const config = {
       loader: "babel-loader" // config in .babelrc
     }]
   },
-  plugins: [new LiveReloadPlugin({ appendScriptTag: true })]
+  plugins: []
 };
 
 module.exports = config;
