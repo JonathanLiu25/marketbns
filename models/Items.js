@@ -1,4 +1,4 @@
-const { STRING, INTEGER } = require("sequelize");
+const { STRING, INTEGER, ENUM } = require("sequelize");
 const db = require("./db.js");
 
 const Items = db.define("items", {
@@ -8,6 +8,10 @@ const Items = db.define("items", {
     validate: {
       notEmpty: true
     }
+  },
+  exact: {
+    type: ENUM("0", "1"),
+    default: "0"
   },
   buy: INTEGER,
   cheap: INTEGER,

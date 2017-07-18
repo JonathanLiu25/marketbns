@@ -277,3 +277,16 @@ tr:not(.show) {
   color: white;
   padding: 10px;
 }
+
+.search {
+  margin: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+.form-group {
+  margin: 0 10px;
+}

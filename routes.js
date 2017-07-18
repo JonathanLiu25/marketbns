@@ -2,11 +2,7 @@ const router = require("express").Router();
 const request = require("request");
 const { JSDOM } = require("jsdom");
 const html2json = require("html2json").html2json;
-
-const allItems = require("./items.json");
-const nonExactUrl = Object.keys(allItems.nonExactItems).map(item => `https://www.bns.academy/live-marketplace/?region=na&q=${item}`);
-const exactUrl = Object.keys(allItems.exactItems).map(item => `https://www.bns.academy/live-marketplace/?region=na&exact=1&q=${item}`);
-const url = nonExactUrl.concat(exactUrl);
+const Items = require("./models/Items");
 
 let lastRequestTime;
 let text = [];
@@ -18,21 +14,70 @@ router.get("/", (req, res, next) => {
   if (lastRequestTime && (Date.now() - lastRequestTime < 9000)) {
     res.send(text);
   } else {
-    lastRequestTime = Date.now();
-    tempText = [];
-    const requests = url.map((item, itemIdx) => {
-      return new Promise(resolveCb => {
-        newRequest(item, itemIdx, resolveCb);
-      });
-    });
+    Items.findAll()
+      .then(allItems => {
+        const url = allItems.map(item => `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`);
 
-    Promise.all(requests)
-      .then(() => {
-        text = [...tempText];
-        res.send(text);
+        lastRequestTime = Date.now();
+        tempText = [];
+        const requests = url.map((item, itemIdx) => {
+          return new Promise(resolveCb => {
+            newRequest(item, itemIdx, resolveCb);
+          });
+        });
+
+        Promise.all(requests)
+          .then(() => {
+            text = [...tempText];
+            res.send(text);
+          })
+          .catch(next);
       })
       .catch(next);
   }
+});
+
+router.post("/", (req, res, next) => {
+  Items.findOrCreate({
+    where: {
+      name: req.body.name
+    },
+    defaults: req.body
+  })
+    .spread((item, created) => {
+      if (created) {
+        res.json(item);
+      } else {
+        item.update(req.body)
+          .then(updatedItem => res.json(updatedItem))
+          .catch(next);
+      }
+    })
+    .catch(next);
+});
+
+router.put("/:name", (req, res, next) => {
+  Items.findOne({
+    where: req.params.name
+  })
+    .then(item => {
+      item.update(req.body)
+        .then(updatedItem => res.json(updatedItem))
+        .catch(next);
+    })
+    .catch(next);
+});
+
+router.delete("/:name", (req, res, next) => {
+  Items.findOne({
+    where: req.params.name
+  })
+    .then(item => {
+      item.destroy()
+        .then(() => res.sendStatus(204))
+        .catch(next);
+    })
+    .catch(next);
 });
 
 function newRequest(item, itemIdx, resolveCb) {

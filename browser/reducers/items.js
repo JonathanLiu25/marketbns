@@ -23,6 +23,13 @@ function itemsRequest(dispatch) {
     .catch(console.error);
 }
 
+export const addItem = item =>
+  dispatch =>
+    axios.post("/items", item)
+      // .then(res => res.data)
+      // .then(newItem => console.log("new item", newItem))
+      .catch(console.error);
+
 // REDUCER
 const initialState = {
   allItems: []
