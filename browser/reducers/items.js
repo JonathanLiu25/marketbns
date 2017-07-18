@@ -11,11 +11,17 @@ export const setItems = allItems => ({
 
 // THUNK
 export const getItems = () =>
-  dispatch =>
-    axios.get("/items")
-      .then(res => res.data)
-      .then(allItems => dispatch(setItems(allItems)))
-      .catch(console.error);
+  dispatch => {
+    setInterval(() => itemsRequest(dispatch), 10000);
+    return itemsRequest(dispatch);
+  };
+
+function itemsRequest(dispatch) {
+  return axios.get("/items")
+    .then(res => res.data)
+    .then(allItems => dispatch(setItems(allItems)))
+    .catch(console.error);
+}
 
 // REDUCER
 const initialState = {

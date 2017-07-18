@@ -1,69 +1,60 @@
 import React from "react";
 
 const ItemRow = ({ item }) => (
-  <tr className={item.attr ? "show" : ""}>
-    <td className={Array.isArray(item.child[0].attr.class) ? item.child[0].attr.class.join(" ") : item.child[0].attr.class}>
+  <tr className={item.show ? "show" : ""}>
+    <td className="iconCell">
       <img
-        alt={Array.isArray(item.child[0].child[0].attr.alt) ? item.child[0].child[0].attr.alt.join(" ") : item.child[0].child[0].attr.alt}
-        className={item.child[0].child[0].attr.class}
-        src={item.child[0].child[0].attr.src} />
-      {item.child[0].child[1] && <span className={item.child[0].child[1].attr.class}>{item.child[0].child[1].child[0].text}</span>}
+        alt={item.alt}
+        className="iconImg"
+        src={item.src} />
+      {item.amount > 1 && <span className="num">{item.amount}</span>}
     </td>
-    <td className={Array.isArray(item.child[1].attr.class) ? item.child[1].attr.class.join(" ") : item.child[1].attr.class}>
-      <span className={Array.isArray(item.child[1].child[0].attr.class) ? item.child[1].child[0].attr.class.join(" ") : item.child[1].child[0].attr.class}>
-        {item.child[1].child[0].child[0].text}
+
+    <td className={`text ${item.grade}`}>
+      <span className="name noneAttribute">
+        {item.alt}
       </span>
     </td>
-    <td className={Array.isArray(item.child[2].attr.class) ? item.child[2].attr.class.join(" ") : item.child[2].attr.class}>
-      <div className={item.child[2].child[0].attr.class}>
-        <span className={item.child[2].child[0].child[0].attr.class}>
-          {item.child[2].child[0].child[0].child[0].text}
-          <span>
-            {item.child[2].child[0].child[0].child[1].child[0].text}
-          </span>
-        </span>
-        {item.child[2].child[0].child[1] &&
-          <span className={item.child[2].child[0].child[1].attr.class}>
-            {item.child[2].child[0].child[1].child[0].text}
-            <span>
-              {item.child[2].child[0].child[1].child[1].child[0].text}
-            </span>
+
+    <td className="price">
+      {item.price.unit && <div className="unit">
+        {item.price.unit.gold &&
+          <span className="gold">
+            {item.price.unit.gold}
+            <span>금</span>
+          </span>}
+        {item.price.unit.silver &&
+          <span className="silver">
+            {item.price.unit.silver}
+            <span>은</span>
           </span>
         }
-        {item.child[2].child[0].child[2] &&
-          <span className={item.child[2].child[0].child[2].attr.class}>
-            {item.child[2].child[0].child[2].child[0].text}
-            <span>
-              {item.child[2].child[0].child[2].child[1].child[0].text}
-            </span>
+        {item.price.unit.bronze &&
+          <span className="bronze">
+            {item.price.unit.bronze}
+            <span>동</span>
+          </span>
+        }
+      </div>}
+      <div className="total">
+        {item.price.total.gold &&
+          <span className="gold">
+            {item.price.total.gold}
+            <span>금</span>
+          </span>}
+        {item.price.total.silver &&
+          <span className="silver">
+            {item.price.total.silver}
+            <span>은</span>
+          </span>
+        }
+        {item.price.total.bronze &&
+          <span className="bronze">
+            {item.price.total.bronze}
+            <span>동</span>
           </span>
         }
       </div>
-      {item.child[2].child[1] &&
-        <div className={item.child[2].child[1].attr.class}>
-          <span className={item.child[2].child[1].child[0].attr.class}>
-            {item.child[2].child[1].child[0].child[0].text}
-            <span>
-              {item.child[2].child[1].child[0].child[1].child[0].text}
-            </span>
-          </span>
-          {item.child[2].child[1].child[1] &&
-            <span className={item.child[2].child[1].child[1].attr.class}>
-              {item.child[2].child[1].child[1].child[0].text}
-              <span>
-                {item.child[2].child[1].child[1].child[1].child[0].text}
-              </span>
-            </span>
-          }
-          {item.child[2].child[1].child[2] &&
-            <span className={item.child[2].child[1].child[2].attr.class}>
-              {item.child[2].child[1].child[2].child[0].text}
-              <span>
-                {item.child[2].child[1].child[2].child[1].child[0].text}
-              </span>
-            </span>
-          }
-        </div>}
     </td>
   </tr>
 );

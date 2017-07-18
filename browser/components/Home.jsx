@@ -20,7 +20,7 @@ const Home = props => (
   <div className="items">
     <table id="listMarket" className="listMarket">
       {props.allItems.length ?
-        props.allItems.map((items, itemIdx) => <ItemBody items={items} key={`item${itemIdx}`} />)
+        props.allItems.map((items, itemIdx) => <ItemBody items={items} key={`item-body-${itemIdx}`} />)
         :
         <Loading />
       }
