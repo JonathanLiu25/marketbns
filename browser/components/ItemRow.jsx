@@ -13,11 +13,11 @@ const ItemRow = ({ item }) => (
 
     <td className={`text ${item.grade}`}>
       <span className="name noneAttribute">
-        {item.alt}
+        {item.info.name}
       </span>
     </td>
 
-    <ItemPrice price={item.price} />
+    <ItemPrice price={item.price} info={item.info} />
   </tr>
 );
 

@@ -47,7 +47,13 @@ router.post("/", (req, res, next) => {
       if (created) {
         res.json(item);
       } else {
-        item.update(req.body)
+        const updateTo = {
+          exact: req.body.exact,
+          buy: req.body.buy || item.buy,
+          cheap: req.body.cheap || item.cheap,
+          sell: req.body.sell || item.sell
+        };
+        item.update(updateTo)
           .then(updatedItem => res.json(updatedItem))
           .catch(next);
       }
@@ -79,15 +85,19 @@ router.delete("/:name", (req, res, next) => {
     .catch(next);
 });
 
-function newRequest(url, item, resolveCb) {
+function newRequest(url, item, resolveCb, retries = 0, maxRetries = 5) {
   request(url, (err, response, body) => {
     if (err) {
-      tempText[item.id - 1] = err;
+      tempText[item.id - 1] = [err];
       resolveCb();
     } else {
       const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
-      if (listMarket.getElementsByClassName("emptyResult").length) {
-        newRequest(url, item, resolveCb);
+
+      if (listMarket.getElementsByClassName("emptyResult").length && retries < maxRetries) {
+        newRequest(url, item, resolveCb, ++retries);
+      } else if (retries >= maxRetries) {
+        tempText[item.id - 1] = [{ show: true, info: item, price: { total: {} } }];
+        resolveCb();
       } else {
         const marketHTML = listMarket.innerHTML.replace(/\n[\s]*/g, "");
         convertToObject(marketHTML, item);

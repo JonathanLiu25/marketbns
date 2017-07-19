@@ -89,10 +89,12 @@ tr .text,
 
 /*Change cell color on mouseover*/
 
+
+/* 
 tr:hover td,
 tr:hover th {
   background: grey;
-}
+} */
 
 
 /* cell background,round edges */
@@ -267,8 +269,16 @@ tr:not(.show) {
   margin: 20px;
 }
 
-.buyNow {
+.price-green {
   background-color: green;
+}
+
+.price-orange {
+  background-color: orange;
+}
+
+.price-red {
+  background-color: red;
 }
 
 .loading {
@@ -289,4 +299,8 @@ tr:not(.show) {
 
 .form-group {
   margin: 0 10px;
+}
+
+.input-price {
+  width: 60px;
 }
