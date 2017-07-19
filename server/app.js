@@ -1,7 +1,7 @@
+const { resolve } = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
-const { resolve } = require("path");
-const models = require("./models");
+const models = require("../models");
 
 const app = express();
 
@@ -10,13 +10,15 @@ app.use(bodyParser.json());
 
 app.use("/items", require("./routes.js"));
 
-app.use(express.static(resolve(__dirname, "public")));
+app.use(express.static(resolve(__dirname, "..", "public")));
 
 const port = process.env.PORT || 3000;
 
 if (module === require.main) {
   const force = false;
-  models.db.sync({ force });
+  models.db.sync({ force })
+    .then(() => console.log(`Synced models to db ${force ? "-forced" : ""}`))
+    .catch(console.error);
 
   const server = app.listen(port, () => {
     console.log("Listening on port", server.address().port);

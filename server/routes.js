@@ -2,7 +2,7 @@ const router = require("express").Router();
 const request = require("request");
 const { JSDOM } = require("jsdom");
 const html2json = require("html2json").html2json;
-const Items = require("./models/Items");
+const Items = require("../models/Items");
 
 // start request time but set it back 10000 ms
 let lastRequestTime = Date.now() - 10000;
