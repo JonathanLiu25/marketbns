@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { addItem, changeItem } from "../reducers/item.js";
 
 const initialState = {
   buyGold: 0,
@@ -18,8 +19,19 @@ class LocalContainer extends React.Component {
     super();
     this.state = Object.assign({}, initialState);
 
+    this.makeItem = this.makeItem.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  makeItem() {
+    return ({
+      name: this.props.name,
+      exact: String(this.props.exact),
+      buy: this.state.buyGold * 10000 + this.state.buySilver * 100 + this.state.buyBronze,
+      cheap: this.state.cheapGold * 10000 + this.state.cheapSilver * 100 + this.state.cheapBronze,
+      sell: this.state.sellGold * 10000 + this.state.sellSilver * 100 + this.state.sellBronze
+    });
   }
 
   handleChange(event) {
@@ -28,13 +40,9 @@ class LocalContainer extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const changedItem = {
-      buy: this.state.buyGold * 10000 + this.state.buySilver * 100 + this.state.buyBronze,
-      cheap: this.state.cheapGold * 10000 + this.state.cheapSilver * 100 + this.state.cheapBronze,
-      sell: this.state.sellGold * 10000 + this.state.sellSilver * 100 + this.state.sellBronze
-    };
 
-    this.props.changeItem(changedItem);
+    if (event.target.name === "add-item") this.props.addItem(this.makeItem());
+    if (event.target.name === "update-item") this.props.changeItem(this.makeItem());
     this.setState(initialState);
   }
 
@@ -49,7 +57,7 @@ class LocalContainer extends React.Component {
 }
 
 const ItemChangeForm = props => (
-  <form className="item-price-form" onSubmit={props.handleSubmit}>
+  <form className="item-price-form">
     <div className="form-group">
       <label>Buy price: </label>
       <input
@@ -122,13 +130,14 @@ const ItemChangeForm = props => (
         value={props.sellBronze}
         onChange={props.handleChange} />
     </div>
-    <button type="submit">Update Item</button>
+    <button name="add-item" type="submit" onClick={props.handleSubmit}>Add Item</button>
+    <button name="update-item" type="submit" onClick={props.handleSubmit}>Update Item</button>
   </form>
 );
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({ name: state.search.itemName, exact: state.search.exact });
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = { addItem, changeItem };
 
 const ItemChangeFormContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 
