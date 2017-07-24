@@ -81,9 +81,12 @@ router.put("/:name", (req, res, next) => {
     .catch(next);
 });
 
-router.delete("/:name", (req, res, next) => {
+router.delete("/:name/:exact", (req, res, next) => {
   Items.findOne({
-    where: req.params.name
+    where: {
+      name: req.params.name,
+      exact: req.params.exact
+    }
   })
     .then(item => {
       return item.destroy()

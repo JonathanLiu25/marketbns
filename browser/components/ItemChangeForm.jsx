@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addItem, changeItem } from "../reducers/item.js";
+import { addItem, changeItem, deleteItem } from "../reducers/item.js";
 
 const initialState = {
   buyGold: 0,
@@ -43,6 +43,7 @@ class LocalContainer extends React.Component {
 
     if (event.target.name === "add-item") this.props.addItem(this.makeItem());
     if (event.target.name === "update-item") this.props.changeItem(this.makeItem());
+    if (event.target.name === "delete-item") this.props.deleteItem({ name: this.props.name, exact: String(this.props.exact) });
     this.setState(initialState);
   }
 
@@ -132,12 +133,13 @@ const ItemChangeForm = props => (
     </div>
     <button name="add-item" type="submit" onClick={props.handleSubmit}>Add Item</button>
     <button name="update-item" type="submit" onClick={props.handleSubmit}>Update Item</button>
+    <button name="delete-item" type="submit" onClick={props.handleSubmit}>Delete Item</button>
   </form>
 );
 
 const mapStateToProps = state => ({ name: state.search.itemName, exact: state.search.exact });
 
-const mapDispatchToProps = { addItem, changeItem };
+const mapDispatchToProps = { addItem, changeItem, deleteItem };
 
 const ItemChangeFormContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 

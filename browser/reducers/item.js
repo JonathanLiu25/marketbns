@@ -42,9 +42,9 @@ export const changeItem = item =>
     axios.put(`/items/${item.name}`, item)
       .catch(console.error);
 
-export const deleteItem = itemId =>
+export const deleteItem = item =>
   dispatch =>
-    axios.delete(`/items/${itemId}`)
+    axios.delete(`/items/${item.name}/${item.exact}`)
       .catch(console.error);
 
 // REDUCER

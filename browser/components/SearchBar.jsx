@@ -34,7 +34,7 @@ class LocalContainer extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.itemName !== this.state.name && this.state.name === "") this.setState({ name: nextProps.itemName });
+    if (nextProps.itemName !== this.state.name) this.setState({ name: nextProps.itemName });
   }
 
   handleChange(event, { newValue }) {
@@ -82,16 +82,16 @@ const SearchBar = props => (
       <div className="form-group">
         <label>Item: </label>
         <AutoSuggest
-          inputProps={{
-            name: "name",
-            value: props.name,
-            onChange: props.handleChange
-          }}
           suggestions={props.suggestions}
           onSuggestionsFetchRequested={props.handleSuggestions}
           onSuggestionsClearRequested={props.clearSuggestions}
           getSuggestionValue={getSuggestionValue}
-          renderSuggestion={renderSuggestion} />
+          renderSuggestion={renderSuggestion}
+          inputProps={{
+            name: "name",
+            value: props.name,
+            onChange: props.handleChange
+          }} />
       </div>
       <div className="form-group">
         <label>Exact: </label>
