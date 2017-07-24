@@ -260,10 +260,6 @@ tr:not(.show) {
   margin: 0 10px;
 }
 
-.input-price {
-  width: 60px;
-}
-
 .react-autosuggest__input {
   margin: 0 5px;
   padding: 0 15px;
@@ -289,5 +285,6 @@ tr:not(.show) {
 }
 
 .input-price {
+  width: 50px;
   margin-left: 10px;
 }

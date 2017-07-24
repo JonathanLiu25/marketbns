@@ -10,9 +10,11 @@ export const setItems = allItems => ({
 });
 
 // THUNK
+let tempInterval;
+
 export const getItems = () =>
   dispatch => {
-    setInterval(() => itemsRequest(dispatch), 10000);
+    tempInterval = setInterval(() => itemsRequest(dispatch), 10000);
     return itemsRequest(dispatch);
   };
 
@@ -22,6 +24,10 @@ function itemsRequest(dispatch) {
     .then(allItems => dispatch(setItems(allItems)))
     .catch(console.error);
 }
+
+export const stopItemsRequest = () =>
+  dispatch =>
+    clearInterval(tempInterval);
 
 // REDUCER
 const initialState = {

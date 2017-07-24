@@ -2,11 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import Loading from "./Loading";
 import ItemBody from "./ItemBody";
-import { getItems } from "../reducers/items";
+import { getItems, stopItemsRequest } from "../reducers/items";
 
 class LocalContainer extends React.Component {
   componentDidMount() {
     this.props.getItems();
+  }
+
+  componentWillUnmount() {
+    this.props.stopItemsRequest();
   }
 
   render() {
@@ -32,7 +36,7 @@ const Home = props => (
 
 const mapStateToProps = state => ({ items: state.items });
 
-const mapDispatchToProps = { getItems };
+const mapDispatchToProps = { getItems, stopItemsRequest };
 
 const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 

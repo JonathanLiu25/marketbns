@@ -40,7 +40,10 @@ class LocalContainer extends React.Component {
 
   render() {
     return (
-      <ItemChangeForm {...this.state} />
+      <ItemChangeForm
+        {...this.state}
+        handleChange={this.handleChange}
+        handleSubmit={this.handleSubmit} />
     );
   }
 }
