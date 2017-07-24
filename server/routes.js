@@ -69,10 +69,12 @@ router.get("/:name", (req, res, next) => {
 
 router.put("/:name", (req, res, next) => {
   Items.findOne({
-    where: req.params.name
+    where: {
+      name: req.params.name
+    }
   })
     .then(item => {
-      item.update(req.body)
+      return item.update(req.body)
         .then(updatedItem => res.json(updatedItem))
         .catch(next);
     })
@@ -84,7 +86,7 @@ router.delete("/:name", (req, res, next) => {
     where: req.params.name
   })
     .then(item => {
-      item.destroy()
+      return item.destroy()
         .then(() => res.sendStatus(204))
         .catch(next);
     })

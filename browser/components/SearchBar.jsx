@@ -41,7 +41,7 @@ class LocalContainer extends React.Component {
   handleSuggestionSelect(event) {
     this.props.setSearchItem(event.target.value);
     this.props.setExact();
-
+    console.log(event.target.value);
     this.props.history.push(`/${event.target.value}?exact=1`);
   }
 
@@ -100,8 +100,7 @@ const SearchBar = props => (
           onSuggestionsFetchRequested={props.handleSuggestions}
           onSuggestionsClearRequested={props.clearSuggestions}
           getSuggestionValue={getSuggestionValue}
-          renderSuggestion={renderSuggestion}
-          onSuggestionSelected={props.handleSuggestionSelect} />
+          renderSuggestion={renderSuggestion} />
       </div>
       <div className="form-group">
         <label>Exact: </label>
