@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Loading from "./Loading.jsx";
 import ItemBody from "./ItemBody.jsx";
 import ItemChangeForm from "./ItemChangeForm.jsx";
-import { getItem, addItem, changeItem, deleteItem } from "../reducers/item";
+import { getItem, addItem, changeItem, deleteItem } from "../reducers/item.js";
 import { setSearchItem, setExact } from "../reducers/search.js";
 
 class LocalContainer extends React.Component {

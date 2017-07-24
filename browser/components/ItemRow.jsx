@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ItemPrice from "./ItemPrice";
+import ItemPrice from "./ItemPrice.jsx";
 
 const ItemRow = ({ item }) => (
   <tr className={item.show ? "show" : ""}>

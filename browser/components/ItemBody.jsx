@@ -1,5 +1,5 @@
 import React from "react";
-import ItemRow from "./ItemRow";
+import ItemRow from "./ItemRow.jsx";
 
 const ItemBody = props => (
   <tbody>
