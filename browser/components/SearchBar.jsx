@@ -26,7 +26,6 @@ class LocalContainer extends React.Component {
       suggestions: []
     };
 
-    this.handleSuggestionSelect = this.handleSuggestionSelect.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleExactCheckbox = this.handleExactCheckbox.bind(this);
     this.handleSuggestions = this.handleSuggestions.bind(this);
@@ -36,13 +35,6 @@ class LocalContainer extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.itemName !== this.state.name && this.state.name === "") this.setState({ name: nextProps.itemName });
-  }
-
-  handleSuggestionSelect(event) {
-    this.props.setSearchItem(event.target.value);
-    this.props.setExact();
-    console.log(event.target.value);
-    this.props.history.push(`/${event.target.value}?exact=1`);
   }
 
   handleChange(event, { newValue }) {
@@ -66,7 +58,7 @@ class LocalContainer extends React.Component {
     event.preventDefault();
     this.props.setSearchItem(this.state.name);
 
-    this.props.history.push(`/${this.props.itemName}?exact=${this.props.exact}`);
+    this.props.history.push(`/${this.state.name}?exact=${this.props.exact}`);
   }
 
   render() {
@@ -74,7 +66,6 @@ class LocalContainer extends React.Component {
       <SearchBar
         {...this.props}
         {...this.state}
-        handleSuggestionSelect={this.handleSuggestionSelect}
         handleChange={this.handleChange}
         handleExactCheckbox={this.handleExactCheckbox}
         handleSuggestions={this.handleSuggestions}
