@@ -17,7 +17,8 @@ class LocalContainer extends React.Component {
   componentDidMount() {
     this.props.setSearchItem(this.state.name);
     const exactSearch = this.props.location.search;
-    if (exactSearch && exactSearch.indexOf("?exact=") !== -1) {
+    const exactQueryIndex = exactSearch.indexOf("?exact=");
+    if (exactQueryIndex !== -1 && exactSearch[exactQueryIndex + 7] === "1") {
       this.props.setExact();
       this.props.getItem(this.state.name, 1);
     } else {
@@ -27,8 +28,8 @@ class LocalContainer extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     const name = nextProps.match.params.name;
-    if (name !== this.state.name) {
-      this.props.getItem(name, this.props.exact);
+    if (name !== this.state.name || nextProps.exact !== this.props.exact) {
+      this.props.getItem(name, nextProps.exact);
       this.setState({ name });
     }
   }

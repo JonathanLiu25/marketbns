@@ -264,13 +264,21 @@ tr:not(.show) {
   width: 60px;
 }
 
-.typeahead-selector {
-  position: absolute;
-  z-index: 1;
-  background: lightgray;
+.react-autosuggest__input {
+  margin: 0 5px;
+  padding: 0 15px;
 }
 
-.typeahead-selector .hover {
+.react-autosuggest__suggestions-list {
+  position: absolute;
+  list-style-type: none;
+  z-index: 1;
+  background: lightgray;
+  margin: 5px;
+  padding: 15px;
+}
+
+.react-autosuggest__suggestion--highlighted {
   background: white;
 }
 
@@ -278,4 +286,8 @@ tr:not(.show) {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+}
+
+.input-price {
+  margin-left: 10px;
 }

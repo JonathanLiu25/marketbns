@@ -60,7 +60,6 @@ router.post("/", (req, res, next) => {
 
 router.get("/:name", (req, res, next) => {
   const item = { name: req.params.name, exact: req.query.exact };
-  console.log(item);
   const itemData = new Promise(resolveCb => itemRequest(item, resolveCb));
 
   Promise.resolve(itemData)

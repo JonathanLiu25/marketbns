@@ -33,13 +33,14 @@ class LocalContainer extends React.Component {
       cheap: this.state.cheapGold * 10000 + this.state.cheapSilver * 100 + this.state.cheapBronze,
       sell: this.state.sellGold * 10000 + this.state.sellSilver * 100 + this.state.sellBronze
     };
+
     this.props.changeItem(changedItem);
     this.setState(initialState);
   }
 
   render() {
     return (
-      <ItemChangeForm {...this.props} />
+      <ItemChangeForm {...this.state} />
     );
   }
 }
