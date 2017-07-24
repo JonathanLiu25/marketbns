@@ -22,7 +22,7 @@ const ItemRow = ({ price, info }) => {
   }
 
   return (
-    <td className={`price price-${color}`}>
+    <td className={`price bg-${color}`}>
       {
         Object.keys(price).map((bulk) => (
           <div className={bulk} key={`${bulk}`}>

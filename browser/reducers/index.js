@@ -1,8 +1,12 @@
 import { combineReducers } from "redux";
-import items from "./items";
+import item from "./item.js";
+import items from "./items.js";
+import search from "./search.js";
 
 const rootReducer = combineReducers({
-  items
+  item,
+  items,
+  search
 });
 
 export default rootReducer;

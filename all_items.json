@@ -1,0 +1,3253 @@
+[{
+  "Name": "http://bit.ly/SilverBnSHub",
+  "ID": 0
+}, {
+  "Name": "10-Soulstone Bundle",
+  "ID": 2820517
+}, {
+  "Name": "Acquired Taste Secret Technique - Cinderlands",
+  "ID": 811039
+}, {
+  "Name": "Acquired Taste Secret Technique - Moonwater",
+  "ID": 811066
+}, {
+  "Name": "Acquired Taste Secret Technique - Silverfrost",
+  "ID": 811068
+}, {
+  "Name": "Acquired Taste Secret Technique - Viridian Coast",
+  "ID": 810680
+}, {
+  "Name": "Alley Cat",
+  "ID": 910109
+}, {
+  "Name": "Alley Cat Adornment",
+  "ID": 910110
+}, {
+  "Name": "Alley Cat Hair",
+  "ID": 910111
+}, {
+  "Name": "Alpine Necklace",
+  "ID": 2021412
+}, {
+  "Name": "Alpine Ring",
+  "ID": 2021411
+}, {
+  "Name": "Apron of Jubilation",
+  "ID": 910127
+}, {
+  "Name": "Apron of Vanity",
+  "ID": 910128
+}, {
+  "Name": "Archer Hairpin Design",
+  "ID": 2280151
+}, {
+  "Name": "Artisan Pirate Illusion Axe",
+  "ID": 4000068
+}, {
+  "Name": "Artisan Pirate Illusion Dagger",
+  "ID": 0
+}, {
+  "Name": "Artisan Scorpio Illusion Bracers",
+  "ID": 0
+}, {
+  "Name": "Artisan Siren Illusion Bracers",
+  "ID": 3200792
+}, {
+  "Name": "Artisanal Moonwater Critical Soul Shield Primer",
+  "ID": 822801
+}, {
+  "Name": "Artisanal Moonwater Reflex Soul Shield Primer",
+  "ID": 822807
+}, {
+  "Name": "Artisanal Silverfrost Accuracy Soul Shield Primer",
+  "ID": 822823
+}, {
+  "Name": "Artisanal Silverfrost Critical Soul Shield Primer",
+  "ID": 822822
+}, {
+  "Name": "Artisanal Silverfrost Critical Soul Shield Primer Chest",
+  "ID": 821647
+}, {
+  "Name": "Artisanal Silverfrost Defense Soul Shield Primer",
+  "ID": 822827
+}, {
+  "Name": "Artisanal Silverfrost Piercing Soul Shield Primer",
+  "ID": 822826
+}, {
+  "Name": "Artisanal Silverfrost Piercing Soul Shield Primer Chest",
+  "ID": 821651
+}, {
+  "Name": "Artisanal Silverfrost Reflex Soul Shield Primer",
+  "ID": 822828
+}, {
+  "Name": "Artisanal Silverfrost Reflex Soul Shield Primer Chest",
+  "ID": 821653
+}, {
+  "Name": "Artisanal Viridian Critical Soul Shield Primer",
+  "ID": 822773
+}, {
+  "Name": "Asura Ember",
+  "ID": 2022078
+}, {
+  "Name": "Augerite Earring",
+  "ID": 2021222
+}, {
+  "Name": "Baby's Breath",
+  "ID": 810853
+}, {
+  "Name": "Banishing Charm",
+  "ID": 811883
+}, {
+  "Name": "Bargain Fragment Pouch",
+  "ID": 3300008
+}, {
+  "Name": "Barley",
+  "ID": 811577
+}, {
+  "Name": "Bearclaw Ring",
+  "ID": 2021278
+}, {
+  "Name": "Black Cat",
+  "ID": 3150155
+}, {
+  "Name": "Black Cat Headpiece",
+  "ID": 3150156
+}, {
+  "Name": "Black Sun",
+  "ID": 3150056
+}, {
+  "Name": "Blackram Critical Soul Shield",
+  "ID": 710201
+}, {
+  "Name": "Blackwyrm Roar Resistance Charm",
+  "ID": 2820528
+}, {
+  "Name": "Blue Orb",
+  "ID": 823072
+}, {
+  "Name": "Brilliant Cinderlands Key",
+  "ID": 818449
+}, {
+  "Name": "Brilliant Hexagonal Amethyst",
+  "ID": 815871
+}, {
+  "Name": "Brilliant Hexagonal Citrine",
+  "ID": 811393
+}, {
+  "Name": "Brilliant Hexagonal Diamond",
+  "ID": 814610
+}, {
+  "Name": "Brilliant Hexagonal Diamond Pouch",
+  "ID": 814873
+}, {
+  "Name": "Brilliant Hexagonal Emerald",
+  "ID": 811394
+}, {
+  "Name": "Brilliant Hexagonal Peridot",
+  "ID": 811399
+}, {
+  "Name": "Brilliant Hexagonal Ruby",
+  "ID": 811390
+}, {
+  "Name": "Brilliant Hexagonal Sapphire",
+  "ID": 811397
+}, {
+  "Name": "Brilliant Moonwater Fortune Charm",
+  "ID": 817833
+}, {
+  "Name": "Brilliant Moonwater Key",
+  "ID": 818450
+}, {
+  "Name": "Brilliant Pentagonal Amethyst",
+  "ID": 815820
+}, {
+  "Name": "Brilliant Pentagonal Citrine",
+  "ID": 827296
+}, {
+  "Name": "Brilliant Pentagonal Diamond",
+  "ID": 814628
+}, {
+  "Name": "Brilliant Pentagonal Diamond Pouch",
+  "ID": 814642
+}, {
+  "Name": "Brilliant Pentagonal Emerald",
+  "ID": 814649
+}, {
+  "Name": "Brilliant Pentagonal Peridot",
+  "ID": 811374
+}, {
+  "Name": "Brilliant Pentagonal Ruby",
+  "ID": 811365
+}, {
+  "Name": "Brilliant Pentagonal Sapphire",
+  "ID": 811370
+}, {
+  "Name": "Brilliant Silverfrost Fortune Charm",
+  "ID": 820169
+}, {
+  "Name": "Brilliant Silverfrost Key",
+  "ID": 820355
+}, {
+  "Name": "Brilliant Square Amethyst",
+  "ID": 811349
+}, {
+  "Name": "Brilliant Square Citrine",
+  "ID": 824081
+}, {
+  "Name": "Brilliant Square Diamond",
+  "ID": 811286
+}, {
+  "Name": "Brilliant Square Diamond Pouch",
+  "ID": 814638
+}, {
+  "Name": "Brilliant Square Emerald",
+  "ID": 814647
+}, {
+  "Name": "Brilliant Square Peridot",
+  "ID": 811347
+}, {
+  "Name": "Brilliant Square Sapphire",
+  "ID": 811345
+}, {
+  "Name": "Brilliant Triangular Amethyst",
+  "ID": 811323
+}, {
+  "Name": "Brilliant Triangular Citrine",
+  "ID": 811315
+}, {
+  "Name": "Brilliant Triangular Diamond",
+  "ID": 811284
+}, {
+  "Name": "Brilliant Triangular Diamond Pouch",
+  "ID": 814634
+}, {
+  "Name": "Brilliant Triangular Emerald",
+  "ID": 811316
+}, {
+  "Name": "Brilliant Triangular Gem Chest",
+  "ID": 816619
+}, {
+  "Name": "Brilliant Triangular Peridot",
+  "ID": 811321
+}, {
+  "Name": "Brilliant Triangular Ruby",
+  "ID": 811312
+}, {
+  "Name": "Brilliant Triangular Sapphire",
+  "ID": 811318
+}, {
+  "Name": "Brilliant Viridian Key",
+  "ID": 817054
+}, {
+  "Name": "Broken Oathbreaker's Sword Blade",
+  "ID": 3300079
+}, {
+  "Name": "Broken Oathbreaker's Sword Blade Point",
+  "ID": 3300081
+}, {
+  "Name": "Broken Oathbreaker's Sword False Edge",
+  "ID": 3300080
+}, {
+  "Name": "Broken Piece",
+  "ID": 818451
+}, {
+  "Name": "Buccaneer Adornment",
+  "ID": 910113
+}, {
+  "Name": "Buccaneer Eyepatch",
+  "ID": 910114
+}, {
+  "Name": "Bukka Bracelet",
+  "ID": 3300393
+}, {
+  "Name": "Buried Offering Necklace - Stage 1",
+  "ID": 820883
+}, {
+  "Name": "Business Class",
+  "ID": 4300075
+}, {
+  "Name": "Carp Oil",
+  "ID": 810859
+}, {
+  "Name": "Catfish Oil",
+  "ID": 810885
+}, {
+  "Name": "Ceremonial Meal",
+  "ID": 811882
+}, {
+  "Name": "Chungshil Kaoliang Ju",
+  "ID": 815830
+}, {
+  "Name": "Cinderlands Jar",
+  "ID": 817083
+}, {
+  "Name": "Cinderlands Pickaxe",
+  "ID": 817079
+}, {
+  "Name": "Cinderlands Silicate",
+  "ID": 810588
+}, {
+  "Name": "Cinderlands Thorn",
+  "ID": 817076
+}, {
+  "Name": "Cinderlands Transformation Stone",
+  "ID": 817406
+}, {
+  "Name": "Clam Pearl",
+  "ID": 820226
+}, {
+  "Name": "Cold Iron",
+  "ID": 811550
+}, {
+  "Name": "Cold Iron Offering Staff",
+  "ID": 0
+}, {
+  "Name": "Comet Strike - Volume 2",
+  "ID": 3300002
+}, {
+  "Name": "Copper",
+  "ID": 810514
+}, {
+  "Name": "Copper Heavy Gauntlet",
+  "ID": 610257
+}, {
+  "Name": "Copper Staff",
+  "ID": 610258
+}, {
+  "Name": "Corallite",
+  "ID": 4200128
+}, {
+  "Name": "Corrupted Bracers",
+  "ID": 3000017
+}, {
+  "Name": "Corrupted Gauntlet",
+  "ID": 2600342
+}, {
+  "Name": "Corrupted Razor",
+  "ID": 2607765
+}, {
+  "Name": "Corrupted Staff",
+  "ID": 2600347
+}, {
+  "Name": "Corrupted Sword",
+  "ID": 2600337
+}, {
+  "Name": "Crafted Basic Staff",
+  "ID": 610294
+}, {
+  "Name": "Crafted Basic Sword",
+  "ID": 610292
+}, {
+  "Name": "Crafted Cold Iron Axe",
+  "ID": 610974
+}, {
+  "Name": "Crafted Cold Iron Bangle",
+  "ID": 610973
+}, {
+  "Name": "Crafted Cold Iron Dagger",
+  "ID": 610975
+}, {
+  "Name": "Crafted Cold Iron Gauntlet",
+  "ID": 610971
+}, {
+  "Name": "Crafted Cold Iron Staff",
+  "ID": 610972
+}, {
+  "Name": "Crafted Moonwater Critical Soul Shield Primer",
+  "ID": 822794
+}, {
+  "Name": "Crafted Moonwater Evasion Soul Shield Primer",
+  "ID": 822797
+}, {
+  "Name": "Crafted Raw Iron Axe",
+  "ID": 610542
+}, {
+  "Name": "Crafted Raw Iron Bangle",
+  "ID": 610541
+}, {
+  "Name": "Crafted Raw Iron Dagger",
+  "ID": 610543
+}, {
+  "Name": "Crafted Raw Iron Sword",
+  "ID": 610538
+}, {
+  "Name": "Crafted Silverfrost Critical Soul Shield Primer",
+  "ID": 822815
+}, {
+  "Name": "Crafted Silverfrost Piercing Soul Shield Primer",
+  "ID": 822819
+}, {
+  "Name": "Crafted Silverfrost Reflex Soul Shield Primer",
+  "ID": 822821
+}, {
+  "Name": "Crafted Viridian Critical Soul Shield Primer",
+  "ID": 822766
+}, {
+  "Name": "Culinary League Design",
+  "ID": 2280143
+}, {
+  "Name": "Daybreak Bottom Design",
+  "ID": 2280139
+}, {
+  "Name": "Daybreak Top Design",
+  "ID": 2280138
+}, {
+  "Name": "Dazzling Relic Chest",
+  "ID": 821972
+}, {
+  "Name": "Desert Necklace",
+  "ID": 2021116
+}, {
+  "Name": "Desert Ring",
+  "ID": 2021266
+}, {
+  "Name": "Dokumo Bracers",
+  "ID": 3000050
+}, {
+  "Name": "Dokumo Staff",
+  "ID": 2601411
+}, {
+  "Name": "Dragon Bone Inscription",
+  "ID": 810718
+}, {
+  "Name": "Dragon Pet",
+  "ID": 3900411
+}, {
+  "Name": "Dragoncall - Volume 2",
+  "ID": 3300082
+}, {
+  "Name": "Dumpling",
+  "ID": 824416
+}, {
+  "Name": "Dungeon Antidote",
+  "ID": 827332
+}, {
+  "Name": "Dusk Adder Block Soul Shield",
+  "ID": 710217
+}, {
+  "Name": "Dye Polish",
+  "ID": 3300170
+}, {
+  "Name": "Earthen Clay",
+  "ID": 810587
+}, {
+  "Name": "Earthenware Bowl",
+  "ID": 811215
+}, {
+  "Name": "Earthenware Refiner",
+  "ID": 811233
+}, {
+  "Name": "Earthseer Secret Technique - Moonwater",
+  "ID": 811054
+}, {
+  "Name": "Earthseer Secret Technique - Silverfrost",
+  "ID": 811056
+}, {
+  "Name": "Earthseer Secret Technique - Viridian Coast",
+  "ID": 810664
+}, {
+  "Name": "Eboncat",
+  "ID": 3150229
+}, {
+  "Name": "Eboncat Mask",
+  "ID": 3150231
+}, {
+  "Name": "Elder Dragon Element",
+  "ID": 823507
+}, {
+  "Name": "Elder Dragon Jewel",
+  "ID": 823510
+}, {
+  "Name": "Elite Critical Soul Shield",
+  "ID": 716731
+}, {
+  "Name": "Elysian Orb",
+  "ID": 3300016
+}, {
+  "Name": "Emberstomp - Volume 2",
+  "ID": 3300007
+}, {
+  "Name": "Empyrean Spirit Charm",
+  "ID": 821996
+}, {
+  "Name": "Enigmatic Belt",
+  "ID": 2021349
+}, {
+  "Name": "Escape Charm",
+  "ID": 827323
+}, {
+  "Name": "Essence of Plog",
+  "ID": 823995
+}, {
+  "Name": "Evolved Stone",
+  "ID": 2820631
+}, {
+  "Name": "Extravagant Fragment Pouch",
+  "ID": 3300011
+}, {
+  "Name": "Fabric",
+  "ID": 821597
+}, {
+  "Name": "Faction Insignia Chest",
+  "ID": 3300122
+}, {
+  "Name": "Fat Cat",
+  "ID": 910051
+}, {
+  "Name": "Fat Cat Adornment",
+  "ID": 910045
+}, {
+  "Name": "Fat Cat Hair",
+  "ID": 910046
+}, {
+  "Name": "Field Repair Tool",
+  "ID": 827321
+}, {
+  "Name": "Fiend Axe",
+  "ID": 2603337
+}, {
+  "Name": "Fiend Bangle",
+  "ID": 2603336
+}, {
+  "Name": "Fiend Dagger",
+  "ID": 2603338
+}, {
+  "Name": "Fiend Lynblade",
+  "ID": 2603339
+}, {
+  "Name": "Fiend Razor",
+  "ID": 2607878
+}, {
+  "Name": "Fiend Sword",
+  "ID": 2603333
+}, {
+  "Name": "Forgekeeper Blight Illusion Axe Chest",
+  "ID": 4200021
+}, {
+  "Name": "Forgekeeper Blight Illusion Bangle Chest",
+  "ID": 4200020
+}, {
+  "Name": "Forgekeeper Blight Illusion Bracers",
+  "ID": 3300691
+}, {
+  "Name": "Forgekeeper Blight Illusion Gauntlet Chest",
+  "ID": 4200018
+}, {
+  "Name": "Forgekeeper Blight Illusion Lynblade Chest",
+  "ID": 4200023
+}, {
+  "Name": "Forgekeeper Blight Illusion Razor Chest",
+  "ID": 4200024
+}, {
+  "Name": "Forgekeeper Blight Illusion Sword Chest",
+  "ID": 4200017
+}, {
+  "Name": "Forgekeeper Infernal Illusion Axe Chest",
+  "ID": 4200029
+}, {
+  "Name": "Forgekeeper Infernal Illusion Bracers",
+  "ID": 3300692
+}, {
+  "Name": "Forgekeeper Infernal Illusion Dagger Chest",
+  "ID": 4200030
+}, {
+  "Name": "Forgekeeper Infernal Illusion Gauntlet Chest",
+  "ID": 4200026
+}, {
+  "Name": "Forgekeeper Infernal Illusion Lynblade Chest",
+  "ID": 4200031
+}, {
+  "Name": "Forgekeeper Infernal Illusion Razor Chest",
+  "ID": 4200032
+}, {
+  "Name": "Forgekeeper Infernal Illusion Staff Chest",
+  "ID": 4200027
+}, {
+  "Name": "Forgekeeper Infernal Illusion Sword Chest",
+  "ID": 4200025
+}, {
+  "Name": "Forgekeeper Pirate Illusion Bangle Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Pirate Illusion Staff Chest",
+  "ID": 4200043
+}, {
+  "Name": "Forgekeeper Pirate Illusion Sword Chest",
+  "ID": 4200041
+}, {
+  "Name": "Forgekeeper Secret Technique - Cinderlands",
+  "ID": 811019
+}, {
+  "Name": "Forgekeeper Secret Technique - Moonwater",
+  "ID": 811046
+}, {
+  "Name": "Forgekeeper Secret Technique - Silverfrost",
+  "ID": 811048
+}, {
+  "Name": "Forgekeeper Secret Technique - Viridian Coast",
+  "ID": 810660
+}, {
+  "Name": "Forgekeeper Secret Technique Addendum - Moonwater",
+  "ID": 811047
+}, {
+  "Name": "Forgekeeper Siren Illusion Gauntlet Chest",
+  "ID": 4200034
+}, {
+  "Name": "Forgekeeper Siren Illusion Sword Chest",
+  "ID": 4200033
+}, {
+  "Name": "Fraidy Cat",
+  "ID": 910106
+}, {
+  "Name": "Frostscale Axe",
+  "ID": 2603365
+}, {
+  "Name": "Frostscale Essence",
+  "ID": 817842
+}, {
+  "Name": "Frostscale Razor",
+  "ID": 2607908
+}, {
+  "Name": "Frosty Axe",
+  "ID": 2603351
+}, {
+  "Name": "Frosty Bracelet",
+  "ID": 2020860
+}, {
+  "Name": "Frosty Bracers",
+  "ID": 2610324
+}, {
+  "Name": "Frosty Dagger",
+  "ID": 2603352
+}, {
+  "Name": "Frosty Gauntlet",
+  "ID": 2603348
+}, {
+  "Name": "Frosty Lynblade",
+  "ID": 2603353
+}, {
+  "Name": "Frozen Stinger",
+  "ID": 820004
+}, {
+  "Name": "Fury Token",
+  "ID": 828811
+}, {
+  "Name": "Fusion Powder",
+  "ID": 820378
+}, {
+  "Name": "Gem Hammer",
+  "ID": 2820776
+}, {
+  "Name": "Ghost Pet",
+  "ID": 3900405
+}, {
+  "Name": "Giant Clam",
+  "ID": 820175
+}, {
+  "Name": "Glacial Lynblade",
+  "ID": 2601070
+}, {
+  "Name": "Glacial Water",
+  "ID": 820002
+}, {
+  "Name": "Glowing Silverfrost Upgrade Charm",
+  "ID": 820166
+}, {
+  "Name": "Gnarlhorn Bone",
+  "ID": 811583
+}, {
+  "Name": "Gnarlhorn Jerky",
+  "ID": 811628
+}, {
+  "Name": "Gnarlhorn Meat",
+  "ID": 811580
+}, {
+  "Name": "Gold",
+  "ID": 811553
+}, {
+  "Name": "Golden Deva Earring",
+  "ID": 2021112
+}, {
+  "Name": "Golden Deva's Essence",
+  "ID": 810835
+}, {
+  "Name": "Granite",
+  "ID": 810584
+}, {
+  "Name": "Green Orb",
+  "ID": 823070
+}, {
+  "Name": "Greenhollow Return Charm",
+  "ID": 815297
+}, {
+  "Name": "Griffin Pet",
+  "ID": 3900415
+}, {
+  "Name": "Grimy Clam",
+  "ID": 811562
+}, {
+  "Name": "Grindstone",
+  "ID": 810857
+}, {
+  "Name": "Hae Mujin's Machismo",
+  "ID": 811537
+}, {
+  "Name": "Hakan Necklace",
+  "ID": 2021109
+}, {
+  "Name": "Healing Tonic",
+  "ID": 824417
+}, {
+  "Name": "Heimeow",
+  "ID": 910103
+}, {
+  "Name": "Heptagonal Gem Fragments",
+  "ID": 811175
+}, {
+  "Name": "Herbal Fried Chicken",
+  "ID": 810765
+}, {
+  "Name": "Hexagonal Amethyst",
+  "ID": 811388
+}, {
+  "Name": "Hexagonal Citrine",
+  "ID": 827295
+}, {
+  "Name": "Hexagonal Diamond",
+  "ID": 814629
+}, {
+  "Name": "Hexagonal Diamond Pouch",
+  "ID": 81417
+}, {
+  "Name": "Hexagonal Emerald",
+  "ID": 814650
+}, {
+  "Name": "Hexagonal Gem Fragments",
+  "ID": 811174
+}, {
+  "Name": "Hexagonal Peridot",
+  "ID": 811386
+}, {
+  "Name": "Hexagonal Ruby",
+  "ID": 811378
+}, {
+  "Name": "Hexagonal Sapphire",
+  "ID": 811383
+}, {
+  "Name": "High Quality Fabric",
+  "ID": 2820071
+}, {
+  "Name": "Hogshead Return Charm",
+  "ID": 816832
+}, {
+  "Name": "Holy Mackerel Oil",
+  "ID": 811565
+}, {
+  "Name": "Hongsil Premium Kaoliang Ju",
+  "ID": 821968
+}, {
+  "Name": "Honorary Ornament",
+  "ID": 3300016
+}, {
+  "Name": "Hot Artisanal Mamosu Stew",
+  "ID": 3300203
+}, {
+  "Name": "Hot Mamosu Stew",
+  "ID": 820159
+}, {
+  "Name": "I Can Haz Helm",
+  "ID": 910142
+}, {
+  "Name": "I Can Haz Tail Adornment",
+  "ID": 910143
+}, {
+  "Name": "Icecutter",
+  "ID": 820181
+}, {
+  "Name": "Imperator Staff",
+  "ID": 2600497
+}, {
+  "Name": "Infernal Lord's Horn",
+  "ID": 810849
+}, {
+  "Name": "Infernal Pet",
+  "ID": 3900407
+}, {
+  "Name": "Inferno - Volume 2",
+  "ID": 3300004
+}, {
+  "Name": "Iron Ox Bone",
+  "ID": 810881
+}, {
+  "Name": "Iron Ox Meat",
+  "ID": 810583
+}, {
+  "Name": "Ivory Dragon Scale",
+  "ID": 2021489
+}, {
+  "Name": "Jade Magnolia",
+  "ID": 820179
+}, {
+  "Name": "Jadestone Return Charm",
+  "ID": 815295
+}, {
+  "Name": "Jagged Conch",
+  "ID": 810585
+}, {
+  "Name": "Kaolin Bowl",
+  "ID": 820228
+}, {
+  "Name": "Kaolin Clay",
+  "ID": 820177
+}, {
+  "Name": "Kaolin Refiner",
+  "ID": 820227
+}, {
+  "Name": "Key",
+  "ID": 827319
+}, {
+  "Name": "King Gauntlet",
+  "ID": 2603355
+}, {
+  "Name": "King Kaari's Essence",
+  "ID": 814366
+}, {
+  "Name": "Kingfist - Volume 2",
+  "ID": 3300704
+}, {
+  "Name": "Lake Mud",
+  "ID": 810515
+}, {
+  "Name": "Lake Mud Bowl",
+  "ID": 811085
+}, {
+  "Name": "Lake Mud Refiner",
+  "ID": 811087
+}, {
+  "Name": "Large Hibiscus Potion",
+  "ID": 815543
+}, {
+  "Name": "Large Lingzhi Potion",
+  "ID": 810790
+}, {
+  "Name": "Lightning Draw - Volume 2",
+  "ID": 3300001
+}, {
+  "Name": "Lingzhi Extract",
+  "ID": 811253
+}, {
+  "Name": "Lingzhi Mushroom",
+  "ID": 810582
+}, {
+  "Name": "Locked Be Ido's Phantom Weapon",
+  "ID": 3300314
+}, {
+  "Name": "Locked Ebondrake Illusion Weapon",
+  "ID": 3300488
+}, {
+  "Name": "Lost Hongmoon Secret Technique - Volume 2",
+  "ID": 0
+}, {
+  "Name": "Lost Hongmoon Secret Technique - Volume 3",
+  "ID": 0
+}, {
+  "Name": "Lycan Axe",
+  "ID": 2600868
+}, {
+  "Name": "Lycan Bangle",
+  "ID": 2600863
+}, {
+  "Name": "Lycan Bracers",
+  "ID": 3000030
+}, {
+  "Name": "Lycan Dagger",
+  "ID": 2600873
+}, {
+  "Name": "Lycan Gauntlet",
+  "ID": 2600856
+}, {
+  "Name": "Lycan Pet",
+  "ID": 3900406
+}, {
+  "Name": "Lycan the Mighty's Essence",
+  "ID": 811205
+}, {
+  "Name": "Mamosu Meat",
+  "ID": 820173
+}, {
+  "Name": "Marauder Accuracy Soul Shield",
+  "ID": 711044
+}, {
+  "Name": "Marble",
+  "ID": 811556
+}, {
+  "Name": "Mass Revival Charm",
+  "ID": 827325
+}, {
+  "Name": "Master Blight Illusion Axe",
+  "ID": 4000012
+}, {
+  "Name": "Master Blight Illusion Bangle",
+  "ID": 4000011
+}, {
+  "Name": "Master Blight Illusion Bracers",
+  "ID": 3200787
+}, {
+  "Name": "Master Blight Illusion Dagger",
+  "ID": 4000013
+}, {
+  "Name": "Master Blight Illusion Gauntlet",
+  "ID": 4000009
+}, {
+  "Name": "Master Blight Illusion Lynblade",
+  "ID": 4000014
+}, {
+  "Name": "Master Blight Illusion Razor",
+  "ID": 4000015
+}, {
+  "Name": "Master Blight Illusion Staff",
+  "ID": 4000010
+}, {
+  "Name": "Master Blight Illusion Sword",
+  "ID": 4000008
+}, {
+  "Name": "Master Chef Hat Design",
+  "ID": 2280158
+}, {
+  "Name": "Master Infernal Illusion Bangle",
+  "ID": 4000027
+}, {
+  "Name": "Master Infernal Illusion Bracers",
+  "ID": 3200789
+}, {
+  "Name": "Master Infernal Illusion Gauntlet",
+  "ID": 4000025
+}, {
+  "Name": "Master Infernal Illusion Lynblade",
+  "ID": 4000030
+}, {
+  "Name": "Master Infernal Illusion Razor",
+  "ID": 4000031
+}, {
+  "Name": "Master Pirate Illusion Axe",
+  "ID": 4000060
+}, {
+  "Name": "Master Pirate Illusion Bangle",
+  "ID": 4000059
+}, {
+  "Name": "Master Pirate Illusion Dagger",
+  "ID": 4000061
+}, {
+  "Name": "Master Pirate Illusion Gauntlet",
+  "ID": 4000057
+}, {
+  "Name": "Master Pirate Illusion Lynblade",
+  "ID": 4000062
+}, {
+  "Name": "Master Pirate Illusion Razor",
+  "ID": 4000063
+}, {
+  "Name": "Master Pirate Illusion Staff",
+  "ID": 4000058
+}, {
+  "Name": "Master Pirate Illusion Sword",
+  "ID": 4000056
+}, {
+  "Name": "Master Scorpio Illusion Staff",
+  "ID": 4000074
+}, {
+  "Name": "Master Siren Illusion Axe",
+  "ID": 4000044
+}, {
+  "Name": "Master Siren Illusion Bangle",
+  "ID": 4000043
+}, {
+  "Name": "Master Siren Illusion Dagger",
+  "ID": 4000045
+}, {
+  "Name": "Master Siren Illusion Gauntlet",
+  "ID": 4000041
+}, {
+  "Name": "Master Siren Illusion Lynblade",
+  "ID": 4000046
+}, {
+  "Name": "Master Siren Illusion Staff",
+  "ID": 4000042
+}, {
+  "Name": "Master Siren Illusion Sword",
+  "ID": 4000040
+}, {
+  "Name": "Masterwork Silverfrost Accuracy Soul Shield Primer",
+  "ID": 723793
+}, {
+  "Name": "Masterwork Silverfrost Critical Soul Shield Primer",
+  "ID": 723792
+}, {
+  "Name": "Masterwork Silverfrost Reflex Soul Shield Primer",
+  "ID": 723798
+}, {
+  "Name": "Masterwork Soul Shield Primer Design",
+  "ID": 823523
+}, {
+  "Name": "Merry Potter Secret Technique - Moonwater",
+  "ID": 811070
+}, {
+  "Name": "Merry Potter Secret Technique - Silverfrost",
+  "ID": 811072
+}, {
+  "Name": "Misty Woods Antidote",
+  "ID": 2820565
+}, {
+  "Name": "Misty Woods Key",
+  "ID": 2820491
+}, {
+  "Name": "Moonstone",
+  "ID": 820005
+}, {
+  "Name": "Moonwater Critical Provisions Box",
+  "ID": 827339
+}, {
+  "Name": "Moonwater Fortune Charm",
+  "ID": 817829
+}, {
+  "Name": "Moonwater Jar",
+  "ID": 817084
+}, {
+  "Name": "Moonwater Necklace",
+  "ID": 2021119
+}, {
+  "Name": "Moonwater Offering Axe",
+  "ID": 2601900
+}, {
+  "Name": "Moonwater Offering Bangle",
+  "ID": 2601896
+}, {
+  "Name": "Moonwater Offering Gauntlet",
+  "ID": 0
+}, {
+  "Name": "Moonwater Offering Lynblade",
+  "ID": 0
+}, {
+  "Name": "Moonwater Offering Razor",
+  "ID": 2607936
+}, {
+  "Name": "Moonwater Pickaxe",
+  "ID": 817080
+}, {
+  "Name": "Moonwater Quartz",
+  "ID": 811592
+}, {
+  "Name": "Moonwater Tear",
+  "ID": 817077
+}, {
+  "Name": "Moonwater Transformation Stone",
+  "ID": 817407
+}, {
+  "Name": "Moonwater Upgrade Charm",
+  "ID": 817828
+}, {
+  "Name": "Morning Glory",
+  "ID": 811571
+}, {
+  "Name": "Mottled Cerith",
+  "ID": 810513
+}, {
+  "Name": "Muddy Water",
+  "ID": 810589
+}, {
+  "Name": "Mushin's Tower Training Dumpling",
+  "ID": 815831
+}, {
+  "Name": "Naryu Tablet",
+  "ID": 0
+}, {
+  "Name": "Nectar Water",
+  "ID": 810517
+}, {
+  "Name": "Nightshade Essence",
+  "ID": 820628
+}, {
+  "Name": "Northern Critical Soul Shield",
+  "ID": 0
+}, {
+  "Name": "Offal of Darkness",
+  "ID": 3300294
+}, {
+  "Name": "Offal of Silence",
+  "ID": 3300293
+}, {
+  "Name": "Operative Design",
+  "ID": 2280161
+}, {
+  "Name": "Ordinary Fragment Pouch",
+  "ID": 3300009
+}, {
+  "Name": "Orichalcum",
+  "ID": 820176
+}, {
+  "Name": "Otter Pet",
+  "ID": 3900414
+}, {
+  "Name": "Panda Pet",
+  "ID": 3900410
+}, {
+  "Name": "Pattern Polish",
+  "ID": 3300171
+}, {
+  "Name": "Pentagonal Amethyst",
+  "ID": 811362
+}, {
+  "Name": "Pentagonal Citrine",
+  "ID": 811353
+}, {
+  "Name": "Pentagonal Diamond",
+  "ID": 81364
+}, {
+  "Name": "Pentagonal Emerald",
+  "ID": 814648
+}, {
+  "Name": "Pentagonal Gem Fragments",
+  "ID": 811173
+}, {
+  "Name": "Pentagonal Peridot",
+  "ID": 811360
+}, {
+  "Name": "Pentagonal Ruby",
+  "ID": 811352
+}, {
+  "Name": "Pentagonal Sapphire",
+  "ID": 811357
+}, {
+  "Name": "Peppered Accuracy Gnarlhorn Meatball",
+  "ID": 822981
+}, {
+  "Name": "Peppered Gnarlhorn Meatball",
+  "ID": 815546
+}, {
+  "Name": "Peppered Piercing Gnarlhorn Meatball",
+  "ID": 822980
+}, {
+  "Name": "Pinchy's Essence",
+  "ID": 810836
+}, {
+  "Name": "Pine Log",
+  "ID": 810581
+}, {
+  "Name": "Pine Sap",
+  "ID": 810877
+}, {
+  "Name": "Plague Necklace",
+  "ID": 2021107
+}, {
+  "Name": "Platinum",
+  "ID": 820183
+}, {
+  "Name": "Poharan's Perfume",
+  "ID": 811536
+}, {
+  "Name": "Polished Granite",
+  "ID": 811237
+}, {
+  "Name": "Polished Marble",
+  "ID": 811604
+}, {
+  "Name": "Polished Sandstone",
+  "ID": 811012
+}, {
+  "Name": "Porestone",
+  "ID": 811559
+}, {
+  "Name": "Premium Earthenware Bowl",
+  "ID": 814360
+}, {
+  "Name": "Premium Earthenware Refiner",
+  "ID": 811298
+}, {
+  "Name": "Premium Kaolin Bowl",
+  "ID": 820230
+}, {
+  "Name": "Premium Kaolin Refiner",
+  "ID": 820229
+}, {
+  "Name": "Premium Lake Mud Bowl",
+  "ID": 817138
+}, {
+  "Name": "Premium Lake Mud Refiner",
+  "ID": 814351
+}, {
+  "Name": "Premium Tempered Clay Bowl",
+  "ID": 811732
+}, {
+  "Name": "Premium Tempered Clay Refiner",
+  "ID": 811735
+}, {
+  "Name": "Primal Bracers",
+  "ID": 2610322
+}, {
+  "Name": "Pristine Clam",
+  "ID": 811610
+}, {
+  "Name": "Pristine Conch",
+  "ID": 811263
+}, {
+  "Name": "Profane Jiangshi's Essence",
+  "ID": 811206
+}, {
+  "Name": "Purification Jar",
+  "ID": 810721
+}, {
+  "Name": "Radiant Energy",
+  "ID": 3300083
+}, {
+  "Name": "Radiant Ring Secret Technique - Cinderlands",
+  "ID": 811031
+}, {
+  "Name": "Radiant Ring Secret Technique - Moonwater",
+  "ID": 811058
+}, {
+  "Name": "Radiant Ring Secret Technique - Silverfrost",
+  "ID": 811060
+}, {
+  "Name": "Radiant Ring Secret Technique - Viridian Coast",
+  "ID": 810672
+}, {
+  "Name": "Radiant Ring Secret Technique Addendum - Moonwater",
+  "ID": 811059
+}, {
+  "Name": "Rainbowfish Oil",
+  "ID": 820182
+}, {
+  "Name": "Raptor Iron Assault Axe",
+  "ID": 610824
+}, {
+  "Name": "Raspberry",
+  "ID": 810510
+}, {
+  "Name": "Raspberry Extract",
+  "ID": 810646
+}, {
+  "Name": "Raspberry Tonic",
+  "ID": 810694
+}, {
+  "Name": "Raven Feather Fan",
+  "ID": 810717
+}, {
+  "Name": "Ravenbeak Mask Design",
+  "ID": 2280148
+}, {
+  "Name": "Raw Iron",
+  "ID": 810586
+}, {
+  "Name": "Raw Iron Assault Axe",
+  "ID": 0
+}, {
+  "Name": "Red Orb",
+  "ID": 823071
+}, {
+  "Name": "Reindeer Pet",
+  "ID": 3900419
+}, {
+  "Name": "Repair Tool",
+  "ID": 827320
+}, {
+  "Name": "Revitalizers",
+  "ID": 827331
+}, {
+  "Name": "Revival Charm",
+  "ID": 827324
+}, {
+  "Name": "Ribbon Hair",
+  "ID": 910144
+}, {
+  "Name": "Royal Dye",
+  "ID": 821995
+}, {
+  "Name": "Rugged Bracelet",
+  "ID": 820686
+}, {
+  "Name": "Rugged Ring",
+  "ID": 820239
+}, {
+  "Name": "Rumblebees - Volume 2",
+  "ID": 3300005
+}, {
+  "Name": "Sacred Orb",
+  "ID": 820004
+}, {
+  "Name": "Sandbox Kitty",
+  "ID": 910038
+}, {
+  "Name": "Sandbox Kitty Helm",
+  "ID": 910042
+}, {
+  "Name": "Sandstone",
+  "ID": 810512
+}, {
+  "Name": "Scalebeak Bone",
+  "ID": 810855
+}, {
+  "Name": "Scaredy Cat",
+  "ID": 910050
+}, {
+  "Name": "Scaredy Cat Adornment",
+  "ID": 910043
+}, {
+  "Name": "Scaredy Cat Hat",
+  "ID": 910044
+}, {
+  "Name": "Scorching Dragon Soup",
+  "ID": 827328
+}, {
+  "Name": "Seafaring Offering Necklace - Stage 1",
+  "ID": 820868
+}, {
+  "Name": "Sealed Abomination Necklace",
+  "ID": 818632
+}, {
+  "Name": "Sealed Alpine Axe",
+  "ID": 2020993
+}, {
+  "Name": "Sealed Alpine Bangle",
+  "ID": 2020992
+}, {
+  "Name": "Sealed Alpine Belt",
+  "ID": 2021410
+}, {
+  "Name": "Sealed Alpine Bracelet",
+  "ID": 2021409
+}, {
+  "Name": "Sealed Alpine Bracers",
+  "ID": 3300580
+}, {
+  "Name": "Sealed Alpine Dagger",
+  "ID": 2020994
+}, {
+  "Name": "Sealed Alpine Earring",
+  "ID": 2021408
+}, {
+  "Name": "Sealed Alpine Gauntlet",
+  "ID": 2020990
+}, {
+  "Name": "Sealed Alpine Lynblade",
+  "ID": 2020995
+}, {
+  "Name": "Sealed Alpine Necklace",
+  "ID": 2021407
+}, {
+  "Name": "Sealed Alpine Razor",
+  "ID": 2022509
+}, {
+  "Name": "Sealed Alpine Ring",
+  "ID": 2021406
+}, {
+  "Name": "Sealed Alpine Staff",
+  "ID": 2020991
+}, {
+  "Name": "Sealed Alpine Sword",
+  "ID": 2020989
+}, {
+  "Name": "Sealed Ancient Adornment",
+  "ID": 3300452
+}, {
+  "Name": "Sealed Arcane Button",
+  "ID": 3300455
+}, {
+  "Name": "Sealed Arcane Dye",
+  "ID": 3300450
+}, {
+  "Name": "Sealed Arcane Earring",
+  "ID": 817882
+}, {
+  "Name": "Sealed Arcane Necklace",
+  "ID": 817906
+}, {
+  "Name": "Sealed Arcane Ring",
+  "ID": 817857
+}, {
+  "Name": "Sealed Arcane Silk",
+  "ID": 3300451
+}, {
+  "Name": "Sealed Artisanal Cinderlands Critical Soul Shield Primer",
+  "ID": 822787
+}, {
+  "Name": "Sealed Artisanal Moonwater Critical Soul Shield Primer",
+  "ID": 822801
+}, {
+  "Name": "Sealed Artisanal Silverfrost Accuracy Soul Shield Primer",
+  "ID": 822823
+}, {
+  "Name": "Sealed Artisanal Silverfrost Block Soul Shield Primer",
+  "ID": 822824
+}, {
+  "Name": "Sealed Artisanal Silverfrost Critical Soul Shield Primer",
+  "ID": 822822
+}, {
+  "Name": "Sealed Artisanal Silverfrost Defense Soul Shield Primer",
+  "ID": 822827
+}, {
+  "Name": "Sealed Artisanal Silverfrost Evasion Soul Shield Primer",
+  "ID": 822825
+}, {
+  "Name": "Sealed Artisanal Silverfrost Piercing Soul Shield Primer",
+  "ID": 822826
+}, {
+  "Name": "Sealed Artisanal Silverfrost Reflex Soul Shield Primer",
+  "ID": 822828
+}, {
+  "Name": "Sealed Augerite Earring",
+  "ID": 818208
+}, {
+  "Name": "Sealed Bearclaw Ring",
+  "ID": 818641
+}, {
+  "Name": "Sealed Blackram Supply Bracers",
+  "ID": 3300569
+}, {
+  "Name": "Sealed Blackram Supply Gauntlet",
+  "ID": 2820095
+}, {
+  "Name": "Sealed Blackram Supply Lynblade",
+  "ID": 2820100
+}, {
+  "Name": "Sealed Blackram Supply Razor",
+  "ID": 2022485
+}, {
+  "Name": "Sealed Bokgon Axe",
+  "ID": 819577
+}, {
+  "Name": "Sealed Bokgon Bangle",
+  "ID": 819576
+}, {
+  "Name": "Sealed Bokgon Bracers",
+  "ID": 3300563
+}, {
+  "Name": "Sealed Bokgon Gauntlet",
+  "ID": 819574
+}, {
+  "Name": "Sealed Bokgon Razor",
+  "ID": 2022475
+}, {
+  "Name": "Sealed Bokgon Staff",
+  "ID": 819575
+}, {
+  "Name": "Sealed Brigand Earring",
+  "ID": 2020910
+}, {
+  "Name": "Sealed Brightstone Axe",
+  "ID": 818524
+}, {
+  "Name": "Sealed Brightstone Bracers",
+  "ID": 3300612
+}, {
+  "Name": "Sealed Brightstone Gauntlet",
+  "ID": 818521
+}, {
+  "Name": "Sealed Brightstone Razor",
+  "ID": 826859
+}, {
+  "Name": "Sealed Brightstone Ring",
+  "ID": 818245
+}, {
+  "Name": "Sealed Brightstone Staff",
+  "ID": 818522
+}, {
+  "Name": "Sealed Bukka Bracelet",
+  "ID": 3300376
+}, {
+  "Name": "Sealed Buried Offering Earring",
+  "ID": 820938
+}, {
+  "Name": "Sealed Buried Offering Necklace",
+  "ID": 820939
+}, {
+  "Name": "Sealed Buried Offering Ring",
+  "ID": 820937
+}, {
+  "Name": "Sealed Cinderlands Axe",
+  "ID": 817461
+}, {
+  "Name": "Sealed Cinderlands Bangle",
+  "ID": 817460
+}, {
+  "Name": "Sealed Cinderlands Bracers",
+  "ID": 3300606
+}, {
+  "Name": "Sealed Cinderlands Dagger",
+  "ID": 817462
+}, {
+  "Name": "Sealed Cinderlands Earring",
+  "ID": 817596
+}, {
+  "Name": "Sealed Cinderlands Gauntlet",
+  "ID": 817458
+}, {
+  "Name": "Sealed Cinderlands Lynblade",
+  "ID": 817463
+}, {
+  "Name": "Sealed Cinderlands Necklace",
+  "ID": 817586
+}, {
+  "Name": "Sealed Cinderlands Razor",
+  "ID": 826845
+}, {
+  "Name": "Sealed Cinderlands Ring",
+  "ID": 817570
+}, {
+  "Name": "Sealed Cinderlands Staff",
+  "ID": 817459
+}, {
+  "Name": "Sealed Cinderlands Sword",
+  "ID": 817457
+}, {
+  "Name": "Sealed Cold Iron Offering Axe",
+  "ID": 820820
+}, {
+  "Name": "Sealed Cold Iron Offering Razor",
+  "ID": 826883
+}, {
+  "Name": "Sealed Cold Iron Offering Sword",
+  "ID": 820816
+}, {
+  "Name": "Sealed Copper Axe",
+  "ID": 822007
+}, {
+  "Name": "Sealed Copper Bangle",
+  "ID": 822006
+}, {
+  "Name": "Sealed Copper Dagger",
+  "ID": 822008
+}, {
+  "Name": "Sealed Copper Gauntlet",
+  "ID": 822004
+}, {
+  "Name": "Sealed Copper Staff",
+  "ID": 822005
+}, {
+  "Name": "Sealed Copper Sword",
+  "ID": 822003
+}, {
+  "Name": "Sealed Corrupted Bangle",
+  "ID": 819569
+}, {
+  "Name": "Sealed Corrupted Bracers",
+  "ID": 3300562
+}, {
+  "Name": "Sealed Corrupted Dagger",
+  "ID": 819571
+}, {
+  "Name": "Sealed Corrupted Demon Axe",
+  "ID": 2020958
+}, {
+  "Name": "Sealed Corrupted Demon Bangle",
+  "ID": 2020957
+}, {
+  "Name": "Sealed Corrupted Demon Dagger",
+  "ID": 2020959
+}, {
+  "Name": "Sealed Corrupted Demon Gauntlet",
+  "ID": 2020955
+}, {
+  "Name": "Sealed Corrupted Demon Lynblade",
+  "ID": 2020960
+}, {
+  "Name": "Sealed Corrupted Demon Staff",
+  "ID": 2020956
+}, {
+  "Name": "Sealed Corrupted Demon Sword",
+  "ID": 2020954
+}, {
+  "Name": "Sealed Corrupted Gauntlet",
+  "ID": 819567
+}, {
+  "Name": "Sealed Corrupted Lynblade",
+  "ID": 819572
+}, {
+  "Name": "Sealed Corrupted Razor",
+  "ID": 2022474
+}, {
+  "Name": "Sealed Corrupted Staff",
+  "ID": 819568
+}, {
+  "Name": "Sealed Corrupted Sword",
+  "ID": 819566
+}, {
+  "Name": "Sealed Crafted Cinderlands Accuracy Soul Shield Primer",
+  "ID": 822781
+}, {
+  "Name": "Sealed Crafted Cinderlands Critical Soul Shield Primer",
+  "ID": 822780
+}, {
+  "Name": "Sealed Crafted Cinderlands Defense Soul Shield Primer",
+  "ID": 822785
+}, {
+  "Name": "Sealed Crafted Cinderlands Evasion Soul Shield Primer",
+  "ID": 822783
+}, {
+  "Name": "Sealed Crafted Cinderlands Piercing Soul Shield Primer",
+  "ID": 822784
+}, {
+  "Name": "Sealed Crafted Emblem",
+  "ID": 3300454
+}, {
+  "Name": "Sealed Crafted Moonwater Accuracy Soul Shield Primer",
+  "ID": 822795
+}, {
+  "Name": "Sealed Crafted Moonwater Critical Soul Shield Primer",
+  "ID": 822794
+}, {
+  "Name": "Sealed Crafted Moonwater Defense Soul Shield Primer",
+  "ID": 822799
+}, {
+  "Name": "Sealed Crafted Moonwater Evasion Soul Shield Primer",
+  "ID": 822797
+}, {
+  "Name": "Sealed Crafted Moonwater Piercing Soul Shield Primer",
+  "ID": 822798
+}, {
+  "Name": "Sealed Crafted Moonwater Reflex Soul Shield Primer",
+  "ID": 822800
+}, {
+  "Name": "Sealed Crafted Silverfrost Accuracy Soul Shield Primer",
+  "ID": 822816
+}, {
+  "Name": "Sealed Crafted Silverfrost Block Soul Shield Primer",
+  "ID": 822817
+}, {
+  "Name": "Sealed Crafted Silverfrost Critical Soul Shield Primer",
+  "ID": 822815
+}, {
+  "Name": "Sealed Crafted Silverfrost Defense Soul Shield Primer",
+  "ID": 822820
+}, {
+  "Name": "Sealed Crafted Silverfrost Evasion Soul Shield Primer",
+  "ID": 822818
+}, {
+  "Name": "Sealed Crafted Silverfrost Piercing Soul Shield Primer",
+  "ID": 822819
+}, {
+  "Name": "Sealed Crafted Silverfrost Reflex Soul Shield Primer",
+  "ID": 822821
+}, {
+  "Name": "Sealed Crafted Toolbox",
+  "ID": 3300456
+}, {
+  "Name": "Sealed Crafted Viridian Accuracy Soul Shield Primer",
+  "ID": 822767
+}, {
+  "Name": "Sealed Crafted Viridian Critical Soul Shield Primer",
+  "ID": 822766
+}, {
+  "Name": "Sealed Crafted Viridian Defense Soul Shield Primer",
+  "ID": 822771
+}, {
+  "Name": "Sealed Crafted Viridian Reflex Soul Shield Primer",
+  "ID": 822772
+}, {
+  "Name": "Sealed Desperado Necklace",
+  "ID": 2020909
+}, {
+  "Name": "Sealed Dokkaebi Earring",
+  "ID": 817867
+}, {
+  "Name": "Sealed Dokkaebi Ring",
+  "ID": 817845
+}, {
+  "Name": "Sealed Dokumo Axe",
+  "ID": 818517
+}, {
+  "Name": "Sealed Dokumo Bangle",
+  "ID": 818516
+}, {
+  "Name": "Sealed Dokumo Bracers",
+  "ID": 3300611
+}, {
+  "Name": "Sealed Dokumo Dagger",
+  "ID": 818518
+}, {
+  "Name": "Sealed Dokumo Necklace",
+  "ID": 818247
+}, {
+  "Name": "Sealed Dokumo Staff",
+  "ID": 818515
+}, {
+  "Name": "Sealed Dokumo Sword",
+  "ID": 818513
+}, {
+  "Name": "Sealed Dura Ring",
+  "ID": 818148
+}, {
+  "Name": "Sealed Enigmatic Belt",
+  "ID": 2820291
+}, {
+  "Name": "Sealed Fiend Bracers",
+  "ID": 3300617
+}, {
+  "Name": "Sealed Fiend Razor",
+  "ID": 826873
+}, {
+  "Name": "Sealed Flower of Lament",
+  "ID": 3300172
+}, {
+  "Name": "Sealed Foebreaker Ring",
+  "ID": 2020903
+}, {
+  "Name": "Sealed Forest Earring",
+  "ID": 817874
+}, {
+  "Name": "Sealed Forest Necklace",
+  "ID": 817899
+}, {
+  "Name": "Sealed Forest Ring",
+  "ID": 817849
+}, {
+  "Name": "Sealed Forging Orb",
+  "ID": 3300793
+}, {
+  "Name": "Sealed Frost Bracelet",
+  "ID": 2020919
+}, {
+  "Name": "Sealed Frost Bracers",
+  "ID": 3300578
+}, {
+  "Name": "Sealed Frostscale Axe",
+  "ID": 2020986
+}, {
+  "Name": "Sealed Frostscale Bangle",
+  "ID": 2020985
+}, {
+  "Name": "Sealed Frostscale Belt",
+  "ID": 2020923
+}, {
+  "Name": "Sealed Frostscale Bracelet",
+  "ID": 2020922
+}, {
+  "Name": "Sealed Frostscale Bracers",
+  "ID": 3300579
+}, {
+  "Name": "Sealed Frostscale Dagger",
+  "ID": 2020987
+}, {
+  "Name": "Sealed Frostscale Gauntlet",
+  "ID": 2020983
+}, {
+  "Name": "Sealed Frostscale Lynblade",
+  "ID": 2020988
+}, {
+  "Name": "Sealed Frostscale Razor",
+  "ID": 2022508
+}, {
+  "Name": "Sealed Frostscale Staff",
+  "ID": 2020984
+}, {
+  "Name": "Sealed Frostscale Sword",
+  "ID": 2020982
+}, {
+  "Name": "Sealed Frosty Axe",
+  "ID": 2020972
+}, {
+  "Name": "Sealed Frosty Bangle",
+  "ID": 2020971
+}, {
+  "Name": "Sealed Frosty Dagger",
+  "ID": 2020973
+}, {
+  "Name": "Sealed Frosty Gauntlet",
+  "ID": 2020969
+}, {
+  "Name": "Sealed Frosty Lynblade",
+  "ID": 2020974
+}, {
+  "Name": "Sealed Frosty Razor",
+  "ID": 2022507
+}, {
+  "Name": "Sealed Frosty Staff",
+  "ID": 2020970
+}, {
+  "Name": "Sealed Frosty Sword",
+  "ID": 2020968
+}, {
+  "Name": "Sealed Gemstone Earring",
+  "ID": 817888
+}, {
+  "Name": "Sealed Gemstone Necklace",
+  "ID": 817912
+}, {
+  "Name": "Sealed Gemstone Ring",
+  "ID": 817864
+}, {
+  "Name": "Sealed Glacial Axe",
+  "ID": 817447
+}, {
+  "Name": "Sealed Glacial Bangle",
+  "ID": 817446
+}, {
+  "Name": "Sealed Glacial Bracers",
+  "ID": 3300604
+}, {
+  "Name": "Sealed Glacial Dagger",
+  "ID": 817448
+}, {
+  "Name": "Sealed Glacial Gauntlet",
+  "ID": 817444
+}, {
+  "Name": "Sealed Glacial Lynblade",
+  "ID": 817449
+}, {
+  "Name": "Sealed Glacial Staff",
+  "ID": 817445
+}, {
+  "Name": "Sealed Glacial Sword",
+  "ID": 817443
+}, {
+  "Name": "Sealed Golden Deva Earring",
+  "ID": 2021354
+}, {
+  "Name": "Sealed Hakan Necklace",
+  "ID": 2021352
+}, {
+  "Name": "Sealed Hogdonny Ring",
+  "ID": 818244
+}, {
+  "Name": "Sealed Hujikar Earring",
+  "ID": 818619
+}, {
+  "Name": "Sealed Huren Ring",
+  "ID": 818643
+}, {
+  "Name": "Sealed Imperator Axe",
+  "ID": 818475
+}, {
+  "Name": "Sealed Imperator Bangle",
+  "ID": 818474
+}, {
+  "Name": "Sealed Imperator Gauntlet",
+  "ID": 818472
+}, {
+  "Name": "Sealed Imperator Lynblade",
+  "ID": 818477
+}, {
+  "Name": "Sealed Imperator Razor",
+  "ID": 826851
+}, {
+  "Name": "Sealed Imperator Sword",
+  "ID": 818471
+}, {
+  "Name": "Sealed Iron Juggernaut Earring",
+  "ID": 3300375
+}, {
+  "Name": "Sealed King Axe",
+  "ID": 2020979
+}, {
+  "Name": "Sealed King Bangle",
+  "ID": 2020978
+}, {
+  "Name": "Sealed King Bracers",
+  "ID": 3300597
+}, {
+  "Name": "Sealed King Dagger",
+  "ID": 2020980
+}, {
+  "Name": "Sealed King Earring",
+  "ID": 2020918
+}, {
+  "Name": "Sealed King Gauntlet",
+  "ID": 2020976
+}, {
+  "Name": "Sealed King Lynblade",
+  "ID": 2020981
+}, {
+  "Name": "Sealed King Staff",
+  "ID": 2020977
+}, {
+  "Name": "Sealed King Sword",
+  "ID": 2020975
+}, {
+  "Name": "Sealed Legendary Gem Hammer",
+  "ID": 2021843
+}, {
+  "Name": "Sealed Lycan Axe",
+  "ID": 2820336
+}, {
+  "Name": "Sealed Lycan Bracers",
+  "ID": 3300601
+}, {
+  "Name": "Sealed Lycan Dagger",
+  "ID": 2820337
+}, {
+  "Name": "Sealed Lycan Gauntlet",
+  "ID": 2820333
+}, {
+  "Name": "Sealed Lycan Lynblade",
+  "ID": 2820338
+}, {
+  "Name": "Sealed Lycan Razor",
+  "ID": 826848
+}, {
+  "Name": "Sealed Lycan Staff",
+  "ID": 2820334
+}, {
+  "Name": "Sealed Lycan Sword",
+  "ID": 2820332
+}, {
+  "Name": "Sealed Magolka Belt",
+  "ID": 3300377
+}, {
+  "Name": "Sealed Master Silverfrost Critical Soul Shield Primer",
+  "ID": 823737
+}, {
+  "Name": "Sealed Master Silverfrost Piercing Soul Shield Primer",
+  "ID": 823741
+}, {
+  "Name": "Sealed Master Silverfrost Reflex Soul Shield Primer",
+  "ID": 823743
+}, {
+  "Name": "Sealed Mengwol Ring",
+  "ID": 3300373
+}, {
+  "Name": "Sealed Moonwater Axe",
+  "ID": 818496
+}, {
+  "Name": "Sealed Moonwater Bangle",
+  "ID": 818495
+}, {
+  "Name": "Sealed Moonwater Dagger",
+  "ID": 818497
+}, {
+  "Name": "Sealed Moonwater Earring",
+  "ID": 818618
+}, {
+  "Name": "Sealed Moonwater Gauntlet",
+  "ID": 818493
+}, {
+  "Name": "Sealed Moonwater Lynblade",
+  "ID": 818498
+}, {
+  "Name": "Sealed Moonwater Necklace",
+  "ID": 818631
+}, {
+  "Name": "Sealed Moonwater Razor",
+  "ID": 826855
+}, {
+  "Name": "Sealed Moonwater Ring",
+  "ID": 818639
+}, {
+  "Name": "Sealed Moonwater Staff",
+  "ID": 818494
+}, {
+  "Name": "Sealed Moonwater Sword",
+  "ID": 818492
+}, {
+  "Name": "Sealed Muwol Necklace",
+  "ID": 3300374
+}, {
+  "Name": "Sealed Naryu Silver",
+  "ID": 816298
+}, {
+  "Name": "Sealed Naryu Tablet",
+  "ID": 822701
+}, {
+  "Name": "Sealed Orichalcum Axe",
+  "ID": 822061
+}, {
+  "Name": "Sealed Orichalcum Bangle",
+  "ID": 822060
+}, {
+  "Name": "Sealed Orichalcum Dagger",
+  "ID": 822062
+}, {
+  "Name": "Sealed Orichalcum Gauntlet",
+  "ID": 822058
+}, {
+  "Name": "Sealed Orichalcum Staff",
+  "ID": 822059
+}, {
+  "Name": "Sealed Orichalcum Sword",
+  "ID": 822057
+}, {
+  "Name": "Sealed Pet Enhancement Stone",
+  "ID": 3300489
+}, {
+  "Name": "Sealed Phantom Bangle",
+  "ID": 818488
+}, {
+  "Name": "Sealed Plague Axe",
+  "ID": 817012
+}, {
+  "Name": "Sealed Plague Bangle",
+  "ID": 817011
+}, {
+  "Name": "Sealed Plague Bracers",
+  "ID": 3300558
+}, {
+  "Name": "Sealed Plague Dagger",
+  "ID": 817013
+}, {
+  "Name": "Sealed Plague Gauntlet",
+  "ID": 817009
+}, {
+  "Name": "Sealed Plague Lynblade",
+  "ID": 817014
+}, {
+  "Name": "Sealed Plague Necklace",
+  "ID": 2021351
+}, {
+  "Name": "Sealed Plague Razor",
+  "ID": 2022470
+}, {
+  "Name": "Sealed Plague Staff",
+  "ID": 817010
+}, {
+  "Name": "Sealed Plague Sword",
+  "ID": 817008
+}, {
+  "Name": "Sealed Primal Axe",
+  "ID": 2020965
+}, {
+  "Name": "Sealed Primal Bangle",
+  "ID": 2020964
+}, {
+  "Name": "Sealed Primal Belt",
+  "ID": 2020920
+}, {
+  "Name": "Sealed Primal Bracers",
+  "ID": 3300577
+}, {
+  "Name": "Sealed Primal Gauntlet",
+  "ID": 2020962
+}, {
+  "Name": "Sealed Primal Lynblade",
+  "ID": 2020967
+}, {
+  "Name": "Sealed Primal Razor",
+  "ID": 2022506
+}, {
+  "Name": "Sealed Primal Staff",
+  "ID": 2020963
+}, {
+  "Name": "Sealed Primal Sword",
+  "ID": 2020961
+}, {
+  "Name": "Sealed Raptor Iron Axe",
+  "ID": 822049
+}, {
+  "Name": "Sealed Raptor Iron Bangle",
+  "ID": 822048
+}, {
+  "Name": "Sealed Raptor Iron Dagger",
+  "ID": 822050
+}, {
+  "Name": "Sealed Raptor Iron Gauntlet",
+  "ID": 822046
+}, {
+  "Name": "Sealed Raptor Iron Staff",
+  "ID": 822047
+}, {
+  "Name": "Sealed Raptor Iron Sword",
+  "ID": 822045
+}, {
+  "Name": "Sealed Raptor Necklace",
+  "ID": 818154
+}, {
+  "Name": "Sealed Raptor Ring",
+  "ID": 818152
+}, {
+  "Name": "Sealed Raven King's Soul",
+  "ID": 3300975
+}, {
+  "Name": "Sealed Razortusk Axe",
+  "ID": 818503
+}, {
+  "Name": "Sealed Razortusk Bangle",
+  "ID": 818502
+}, {
+  "Name": "Sealed Razortusk Bracers",
+  "ID": 3300609
+}, {
+  "Name": "Sealed Razortusk Dagger",
+  "ID": 818504
+}, {
+  "Name": "Sealed Razortusk Gauntlet",
+  "ID": 818500
+}, {
+  "Name": "Sealed Razortusk Lynblade",
+  "ID": 818505
+}, {
+  "Name": "Sealed Razortusk Staff",
+  "ID": 818501
+}, {
+  "Name": "Sealed Razortusk Sword",
+  "ID": 818499
+}, {
+  "Name": "Sealed Rugged Belt",
+  "ID": 820649
+}, {
+  "Name": "Sealed Rugged Bracelet",
+  "ID": 820648
+}, {
+  "Name": "Sealed Rugged Earring",
+  "ID": 820456
+}, {
+  "Name": "Sealed Rugged Necklace",
+  "ID": 820457
+}, {
+  "Name": "Sealed Rugged Ring",
+  "ID": 820455
+}, {
+  "Name": "Sealed Sacred Oil",
+  "ID": 4200176
+}, {
+  "Name": "Sealed Samja's Earring",
+  "ID": 817600
+}, {
+  "Name": "Sealed Seafaring Offering Earring",
+  "ID": 820935
+}, {
+  "Name": "Sealed Seafaring Offering Necklace",
+  "ID": 820936
+}, {
+  "Name": "Sealed Seafaring Offering Ring",
+  "ID": 820934
+}, {
+  "Name": "Sealed Sentinel's Axe",
+  "ID": 817412
+}, {
+  "Name": "Sealed Sentinel's Dagger",
+  "ID": 817413
+}, {
+  "Name": "Sealed Sentinel's Gauntlet",
+  "ID": 817409
+}, {
+  "Name": "Sealed Sentinel's Lynblade",
+  "ID": 817414
+}, {
+  "Name": "Sealed Sentinel's Ring",
+  "ID": 2021403
+}, {
+  "Name": "Sealed Silverfrost Belt",
+  "ID": 820645
+}, {
+  "Name": "Sealed Silverfrost Bracelet",
+  "ID": 820644
+}, {
+  "Name": "Sealed Silverfrost Necklace",
+  "ID": 820071
+}, {
+  "Name": "Sealed Silverfrost Ring",
+  "ID": 820069
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Critical Soul Shield Primer",
+  "ID": 827452
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Piercing Soul Shield Primer",
+  "ID": 827456
+}, {
+  "Name": "Sealed Simyu Axe",
+  "ID": 818510
+}, {
+  "Name": "Sealed Simyu Bangle",
+  "ID": 818509
+}, {
+  "Name": "Sealed Simyu Bracers",
+  "ID": 3300610
+}, {
+  "Name": "Sealed Simyu Dagger",
+  "ID": 818511
+}, {
+  "Name": "Sealed Simyu Earring",
+  "ID": 818246
+}, {
+  "Name": "Sealed Simyu Gauntlet",
+  "ID": 818507
+}, {
+  "Name": "Sealed Simyu Lynblade",
+  "ID": 818512
+}, {
+  "Name": "Sealed Simyu Razor",
+  "ID": 826857
+}, {
+  "Name": "Sealed Simyu Staff",
+  "ID": 818508
+}, {
+  "Name": "Sealed Simyu Sword",
+  "ID": 818506
+}, {
+  "Name": "Sealed Siren Bracelet",
+  "ID": 821139
+}, {
+  "Name": "Sealed Soulstone Belt",
+  "ID": 2020930
+}, {
+  "Name": "Sealed Soulstone Bracelet",
+  "ID": 2020929
+}, {
+  "Name": "Sealed Soulstone Earring",
+  "ID": 2020928
+}, {
+  "Name": "Sealed Soulstone Necklace",
+  "ID": 2020927
+}, {
+  "Name": "Sealed Soulstone Ring",
+  "ID": 2020926
+}, {
+  "Name": "Sealed Stalker Axe",
+  "ID": 2820320
+}, {
+  "Name": "Sealed Stalker Bracers",
+  "ID": 3300634
+}, {
+  "Name": "Sealed Stalker Dagger",
+  "ID": 2820321
+}, {
+  "Name": "Sealed Stalker Lynblade",
+  "ID": 2820322
+}, {
+  "Name": "Sealed Stalker Razor",
+  "ID": 2022583
+}, {
+  "Name": "Sealed Stalker Sword",
+  "ID": 2820316
+}, {
+  "Name": "Sealed Steel Axe",
+  "ID": 822031
+}, {
+  "Name": "Sealed Steel Bangle",
+  "ID": 822030
+}, {
+  "Name": "Sealed Steel Dagger",
+  "ID": 822032
+}, {
+  "Name": "Sealed Steel Gauntlet",
+  "ID": 822028
+}, {
+  "Name": "Sealed Steel Staff",
+  "ID": 822029
+}, {
+  "Name": "Sealed Steel Sword",
+  "ID": 822027
+}, {
+  "Name": "Sealed Stone of Wisdom",
+  "ID": 3300371
+}, {
+  "Name": "Sealed Taikhan's Skin",
+  "ID": 3300331
+}, {
+  "Name": "Sealed Talus Prison Necklace",
+  "ID": 2020917
+}, {
+  "Name": "Sealed Talus Prison Ring",
+  "ID": 2020916
+}, {
+  "Name": "Sealed Ukaha's Ring",
+  "ID": 818150
+}, {
+  "Name": "Sealed Updraft Axe",
+  "ID": 2020944
+}, {
+  "Name": "Sealed Updraft Bangle",
+  "ID": 2020943
+}, {
+  "Name": "Sealed Updraft Belt",
+  "ID": 2020902
+}, {
+  "Name": "Sealed Updraft Bracelet",
+  "ID": 2020901
+}, {
+  "Name": "Sealed Updraft Dagger",
+  "ID": 2020945
+}, {
+  "Name": "Sealed Updraft Earring",
+  "ID": 2020900
+}, {
+  "Name": "Sealed Updraft Gauntlet",
+  "ID": 2020941
+}, {
+  "Name": "Sealed Updraft Lynblade",
+  "ID": 2020946
+}, {
+  "Name": "Sealed Updraft Necklace",
+  "ID": 2020899
+}, {
+  "Name": "Sealed Updraft Razor",
+  "ID": 2022504
+}, {
+  "Name": "Sealed Updraft Ring",
+  "ID": 2020898
+}, {
+  "Name": "Sealed Updraft Staff",
+  "ID": 2020942
+}, {
+  "Name": "Sealed Updraft Sword",
+  "ID": 2020940
+}, {
+  "Name": "Sealed Vilray Necklace",
+  "ID": 818157
+}, {
+  "Name": "Sealed Viridian Axe",
+  "ID": 817134
+}, {
+  "Name": "Sealed Viridian Bangle",
+  "ID": 817133
+}, {
+  "Name": "Sealed Viridian Bracers",
+  "ID": 3300603
+}, {
+  "Name": "Sealed Viridian Dagger",
+  "ID": 817135
+}, {
+  "Name": "Sealed Viridian Earring",
+  "ID": 817311
+}, {
+  "Name": "Sealed Viridian Gauntlet",
+  "ID": 817131
+}, {
+  "Name": "Sealed Viridian Lynblade",
+  "ID": 817136
+}, {
+  "Name": "Sealed Viridian Necklace",
+  "ID": 817308
+}, {
+  "Name": "Sealed Viridian Razor",
+  "ID": 826839
+}, {
+  "Name": "Sealed Viridian Ring",
+  "ID": 817298
+}, {
+  "Name": "Sealed Viridian Staff",
+  "ID": 817132
+}, {
+  "Name": "Sealed Viridian Sword",
+  "ID": 817130
+}, {
+  "Name": "Sealed Volcano Offering Belt",
+  "ID": 821138
+}, {
+  "Name": "Sealed Volcano Offering Bracelet",
+  "ID": 821137
+}, {
+  "Name": "Sealed Volcano Offering Earring",
+  "ID": 820941
+}, {
+  "Name": "Sealed Volcano Offering Necklace",
+  "ID": 820942
+}, {
+  "Name": "Sealed Volcano Offering Ring",
+  "ID": 820940
+}, {
+  "Name": "Sealed Wind Bracers",
+  "ID": 3300575
+}, {
+  "Name": "Sealed Wu Fu Earring",
+  "ID": 2021353
+}, {
+  "Name": "Sealed Xanos Disc",
+  "ID": 3300875
+}, {
+  "Name": "Sealed Yes Men Necklace",
+  "ID": 818158
+}, {
+  "Name": "Seasoned Chicken",
+  "ID": 811002
+}, {
+  "Name": "Seasoned Gnarlhorn Meatball",
+  "ID": 815547
+}, {
+  "Name": "Seasoned Iron Ox Meat",
+  "ID": 811269
+}, {
+  "Name": "Seasoned Life Mamosu Stew",
+  "ID": 820160
+}, {
+  "Name": "Seasoned Mamosu",
+  "ID": 820224
+}, {
+  "Name": "Seasoned Piercing Mamosu Stew",
+  "ID": 822985
+}, {
+  "Name": "Sentinel's Ring",
+  "ID": 2021403
+}, {
+  "Name": "Sentry Suit Design",
+  "ID": 2280144
+}, {
+  "Name": "Sequoia Log",
+  "ID": 820171
+}, {
+  "Name": "Sequoia Sap",
+  "ID": 820178
+}, {
+  "Name": "Serpent Calling Bell",
+  "ID": 810719
+}, {
+  "Name": "Shady Kitty Clip",
+  "ID": 910105
+}, {
+  "Name": "Silver Cauldron Secret Technique - Cinderlands",
+  "ID": 811035
+}, {
+  "Name": "Silver Cauldron Secret Technique - Moonwater",
+  "ID": 811062
+}, {
+  "Name": "Silver Cauldron Secret Technique - Silverfrost",
+  "ID": 811064
+}, {
+  "Name": "Silver Cauldron Secret Techniques - Viridian Coast",
+  "ID": 810676
+}, {
+  "Name": "Silverfrost Fortune Charm",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Jar",
+  "ID": 817085
+}, {
+  "Name": "Silverfrost Mountains Dew",
+  "ID": 820003
+}, {
+  "Name": "Silverfrost Pickaxe",
+  "ID": 817081
+}, {
+  "Name": "Silverfrost Premium Transformation Stone",
+  "ID": 821515
+}, {
+  "Name": "Silverfrost Quartz",
+  "ID": 820001
+}, {
+  "Name": "Silverfrost Refining Stone",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Soul Warden Accuracy Soul Shield Primer",
+  "ID": 725104
+}, {
+  "Name": "Silverfrost Soul Warden Critical Soul Shield Primer",
+  "ID": 827452
+}, {
+  "Name": "Silverfrost Soul Warden Piercing Soul Shield Primer",
+  "ID": 725107
+}, {
+  "Name": "Silverfrost Soul Warden Reflex Soul Shield Primer",
+  "ID": 827458
+}, {
+  "Name": "Silverfrost Transformation Stone",
+  "ID": 820222
+}, {
+  "Name": "Simyu Bangle",
+  "ID": 2601384
+}, {
+  "Name": "Sizzling Cat",
+  "ID": 910047
+}, {
+  "Name": "Sizzling Cat Adornment",
+  "ID": 910048
+}, {
+  "Name": "Sizzling Cat Hair",
+  "ID": 910049
+}, {
+  "Name": "Skypetal Feather",
+  "ID": 2021829
+}, {
+  "Name": "Skypetal Flower",
+  "ID": 2021830
+}, {
+  "Name": "Soft Fur",
+  "ID": 2021832
+}, {
+  "Name": "Sorghum",
+  "ID": 810889
+}, {
+  "Name": "Soul Warden Secret Technique - Moonwater",
+  "ID": 811025
+}, {
+  "Name": "Soul Warden Secret Technique - Silverfrost",
+  "ID": 811052
+}, {
+  "Name": "Soul Warden's Emblem",
+  "ID": 827460
+}, {
+  "Name": "Soulstone",
+  "ID": 810603
+}, {
+  "Name": "Soulstone Plains Key",
+  "ID": 3300101
+}, {
+  "Name": "Soulstone Plains Prestige Points Charm",
+  "ID": 824409
+}, {
+  "Name": "Soulstone Scar Prestige Charm",
+  "ID": 0
+}, {
+  "Name": "Sovereign Cloak Design",
+  "ID": 2280142
+}, {
+  "Name": "Sparkling Hexagonal Amethyst",
+  "ID": 816479
+}, {
+  "Name": "Sparkling Hexagonal Citrine",
+  "ID": 827299
+}, {
+  "Name": "Sparkling Hexagonal Diamond",
+  "ID": 815267
+}, {
+  "Name": "Sparkling Hexagonal Emerald",
+  "ID": 811407
+}, {
+  "Name": "Sparkling Hexagonal Gem Pouch",
+  "ID": 815557
+}, {
+  "Name": "Sparkling Hexagonal Peridot",
+  "ID": 811413
+}, {
+  "Name": "Sparkling Hexagonal Ruby",
+  "ID": 811403
+}, {
+  "Name": "Sparkling Hexagonal Sapphire",
+  "ID": 811409
+}, {
+  "Name": "Sparkling Pentagonal Amethyst",
+  "ID": 816478
+}, {
+  "Name": "Sparkling Pentagonal Citrine",
+  "ID": 827298
+}, {
+  "Name": "Sparkling Pentagonal Diamond",
+  "ID": 815266
+}, {
+  "Name": "Sparkling Pentagonal Emerald",
+  "ID": 815246
+}, {
+  "Name": "Sparkling Pentagonal Jewel Pouch",
+  "ID": 815556
+}, {
+  "Name": "Sparkling Pentagonal Peridot",
+  "ID": 815244
+}, {
+  "Name": "Sparkling Pentagonal Sapphire",
+  "ID": 815241
+}, {
+  "Name": "Sparkling Water",
+  "ID": 811595
+}, {
+  "Name": "Spicy Herbal Ox Noodle Soup",
+  "ID": 810778
+}, {
+  "Name": "Square Amethyst",
+  "ID": 824026
+}, {
+  "Name": "Square Citrine",
+  "ID": 824080
+}, {
+  "Name": "Square Diamond",
+  "ID": 814615
+}, {
+  "Name": "Square Diamond Pouch",
+  "ID": 814637
+}, {
+  "Name": "Square Emerald",
+  "ID": 811329
+}, {
+  "Name": "Square Gem Chest",
+  "ID": 816620
+}, {
+  "Name": "Square Gem Fragments",
+  "ID": 811172
+}, {
+  "Name": "Square Peridot",
+  "ID": 811334
+}, {
+  "Name": "Square Ruby",
+  "ID": 811326
+}, {
+  "Name": "Square Sapphire",
+  "ID": 824047
+}, {
+  "Name": "Stalker Jiangshi's Essence",
+  "ID": 810143
+}, {
+  "Name": "Steel Staff",
+  "ID": 610402
+}, {
+  "Name": "Stone Dagger",
+  "ID": 610255
+}, {
+  "Name": "Stone Sword",
+  "ID": 610136
+}, {
+  "Name": "Storm Essence",
+  "ID": 820627
+}, {
+  "Name": "Stylish Fragment Pouch",
+  "ID": 3300010
+}, {
+  "Name": "Stylish Guerilla Bandana Design",
+  "ID": 2280149
+}, {
+  "Name": "Sunrise Action Hero",
+  "ID": 4300058
+}, {
+  "Name": "Sweet Potato",
+  "ID": 820184
+}, {
+  "Name": "Tail Ribbon",
+  "ID": 910145
+}, {
+  "Name": "Tempered Bowl",
+  "ID": 811723
+}, {
+  "Name": "Tempered Clay",
+  "ID": 811574
+}, {
+  "Name": "Tempered Clay Refiner",
+  "ID": 811726
+}, {
+  "Name": "The Blight Fang",
+  "ID": 810602
+}, {
+  "Name": "Thigh Meat",
+  "ID": 2021831
+}, {
+  "Name": "Tin",
+  "ID": 810887
+}, {
+  "Name": "Triangular Amethyst",
+  "ID": 824022
+}, {
+  "Name": "Triangular Diamond",
+  "ID": 814613
+}, {
+  "Name": "Triangular Diamond Pouch",
+  "ID": 814633
+}, {
+  "Name": "Triangular Emerald",
+  "ID": 811303
+}, {
+  "Name": "Triangular Gem Chest",
+  "ID": 816618
+}, {
+  "Name": "Triangular Gem Fragments",
+  "ID": 811171
+}, {
+  "Name": "Triangular Ruby",
+  "ID": 811299
+}, {
+  "Name": "Triangular Sapphire",
+  "ID": 811306
+}, {
+  "Name": "Tribute Token",
+  "ID": 828349
+}, {
+  "Name": "Tumblerock",
+  "ID": 820174
+}, {
+  "Name": "Tumblerock Polished Stone",
+  "ID": 820225
+}, {
+  "Name": "Twinkitty",
+  "ID": 910037
+}, {
+  "Name": "Twinkitty Adornment",
+  "ID": 910039
+}, {
+  "Name": "Twinkitty Helm",
+  "ID": 910040
+}, {
+  "Name": "Ukaha's Ring",
+  "ID": 818150
+}, {
+  "Name": "Unsealing Charm",
+  "ID": 827322
+}, {
+  "Name": "Untamed Griffin Pet",
+  "ID": 3900240
+}, {
+  "Name": "Untamed Infernal Pet",
+  "ID": 3900032
+}, {
+  "Name": "Untamed Lycan Pet",
+  "ID": 3900031
+}, {
+  "Name": "Untamed Otter Pet",
+  "ID": 3900229
+}, {
+  "Name": "Untamed Panda Pet",
+  "ID": 3900059
+}, {
+  "Name": "Untamed Reindeer Pet",
+  "ID": 3900354
+}, {
+  "Name": "Updraft Belt",
+  "ID": 2020871
+}, {
+  "Name": "Updraft Bracelet",
+  "ID": 2020848
+}, {
+  "Name": "Updraft Earring",
+  "ID": 2820825
+}, {
+  "Name": "Updraft Lynblade",
+  "ID": 2603332
+}, {
+  "Name": "Updraft Necklace",
+  "ID": 2820802
+}, {
+  "Name": "Vertigo Eyepatch Design",
+  "ID": 2280146
+}, {
+  "Name": "Violet Honey Cookie",
+  "ID": 821994
+}, {
+  "Name": "Viridian Jar",
+  "ID": 817082
+}, {
+  "Name": "Viridian Necklace",
+  "ID": 2021114
+}, {
+  "Name": "Viridian Pickaxe",
+  "ID": 817078
+}, {
+  "Name": "Viridian Poison",
+  "ID": 817075
+}, {
+  "Name": "Viridian Quartz",
+  "ID": 810516
+}, {
+  "Name": "Viridian Razor",
+  "ID": 2608534
+}, {
+  "Name": "Viridian Transformation Stone",
+  "ID": 817060
+}, {
+  "Name": "Warmrock",
+  "ID": 810883
+}, {
+  "Name": "Warrior Token Chest",
+  "ID": 3300121
+}, {
+  "Name": "White Cedar",
+  "ID": 811586
+}, {
+  "Name": "White Cedar Sap",
+  "ID": 811589
+}, {
+  "Name": "White Orb",
+  "ID": 829832
+}, {
+  "Name": "Whole Chicken",
+  "ID": 810511
+}, {
+  "Name": "Wild Ginseng",
+  "ID": 820172
+}, {
+  "Name": "Wild Ginseng Potion",
+  "ID": 820156
+}, {
+  "Name": "Working Cat",
+  "ID": 3150159
+}, {
+  "Name": "Wu Fu Earring",
+  "ID": 2021110
+}, {
+  "Name": "Yehara's Mirage Return Charm",
+  "ID": 815296
+}, {
+  "Name": "Yellow Hibiscus",
+  "ID": 811568
+}, {
+  "Name": "Yellow Hibiscus Extract",
+  "ID": 811616
+}, {
+  "Name": "Yulan",
+  "ID": 810879
+}, {
+  "Name": "Yulan Magnolia Log",
+  "ID": 810509
+}, {
+  "Name": "Yulan Magnolia Log Sap",
+  "ID": 810851
+}, {
+  "Name": "Zinc",
+  "ID": 810861
+}, {
+  "Name": "Mamosu Bone",
+  "ID": 820180
+}, {
+  "Name": "Millet",
+  "ID": 810863
+}, {
+  "Name": "Northreach Return Charm",
+  "ID": 820221
+}, {
+  "Name": "Polished Tumblerock",
+  "ID": 0
+}, {
+  "Name": "Pristine Cerith",
+  "ID": 811008
+}, {
+  "Name": "Wild Ginseng Extract",
+  "ID": 820223
+}, {
+  "Name": "Mirage Crystal",
+  "ID": 0
+}, {
+  "Name": "Artisanal Silverfrost Block Soul Shield Primer",
+  "ID": 822824
+}, {
+  "Name": "Artisanal Silverfrost Evasion Soul Shield Primer",
+  "ID": 822825
+}, {
+  "Name": "Crafted Basic Axe",
+  "ID": 610296
+}, {
+  "Name": "Crafted Basic Bangle",
+  "ID": 610295
+}, {
+  "Name": "Crafted Basic Dagger",
+  "ID": 610297
+}, {
+  "Name": "Crafted Basic Gauntlet",
+  "ID": 610293
+}, {
+  "Name": "Crafted Cinderlands Accuracy Soul Shield Primer",
+  "ID": 822781
+}, {
+  "Name": "Crafted Cinderlands Block Soul Shield Primer",
+  "ID": 822782
+}, {
+  "Name": "Crafted Cinderlands Critical Soul Shield Primer",
+  "ID": 822780
+}, {
+  "Name": "Crafted Cinderlands Defense Soul Shield Primer",
+  "ID": 822785
+}, {
+  "Name": "Crafted Cinderlands Evasion Soul Shield Primer",
+  "ID": 710879
+}, {
+  "Name": "Crafted Cinderlands Piercing Soul Shield Primer",
+  "ID": 710880
+}, {
+  "Name": "Crafted Cinderlands Reflex Soul Shield Primer",
+  "ID": 822786
+}, {
+  "Name": "Crafted Cold Iron Sword",
+  "ID": 610970
+}, {
+  "Name": "Crafted Moonwater Accuracy Soul Shield Primer",
+  "ID": 822795
+}, {
+  "Name": "Crafted Moonwater Block Soul Shield Primer",
+  "ID": 822796
+}, {
+  "Name": "Crafted Moonwater Defense Soul Shield Primer",
+  "ID": 822799
+}, {
+  "Name": "Crafted Moonwater Piercing Soul Shield Primer",
+  "ID": 822798
+}, {
+  "Name": "Crafted Moonwater Reflex Soul Shield Primer",
+  "ID": 822800
+}, {
+  "Name": "Crafted Orichalcum Axe",
+  "ID": 620551
+}, {
+  "Name": "Crafted Orichalcum Bangle",
+  "ID": 620550
+}, {
+  "Name": "Crafted Orichalcum Dagger",
+  "ID": 620552
+}, {
+  "Name": "Crafted Orichalcum Gauntlet",
+  "ID": 620548
+}, {
+  "Name": "Crafted Orichalcum Staff",
+  "ID": 620549
+}, {
+  "Name": "Crafted Orichalcum Sword",
+  "ID": 620547
+}, {
+  "Name": "Crafted Raw Iron Gauntlet",
+  "ID": 610539
+}, {
+  "Name": "Crafted Raw Iron Staff",
+  "ID": 610540
+}, {
+  "Name": "Crafted Silverfrost Accuracy Soul Shield Primer",
+  "ID": 822816
+}, {
+  "Name": "Crafted Silverfrost Block Soul Shield Primer",
+  "ID": 822817
+}, {
+  "Name": "Crafted Silverfrost Critcal Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Crafted Silverfrost Defense Soul Shield Primer",
+  "ID": 822820
+}, {
+  "Name": "Crafted Silverfrost Evasion Soul Shield Primer",
+  "ID": 822818
+}, {
+  "Name": "Crafted Viridian Accuracy Soul Shield Primer",
+  "ID": 822767
+}, {
+  "Name": "Crafted Viridian Block Soul Shield Primer",
+  "ID": 822768
+}, {
+  "Name": "Crafted Viridian Defense Soul Shield Primer",
+  "ID": 711665
+}, {
+  "Name": "Crafted Viridian Evasion Soul Shield Primer",
+  "ID": 822769
+}, {
+  "Name": "Crafted Viridian Piercing Soul Shield Primer",
+  "ID": 822770
+}, {
+  "Name": "Crafted Viridian Reflex Soul Shield Primer",
+  "ID": 711665
+}, {
+  "Name": "Heptagonal Diamond",
+  "ID": 81366
+}, {
+  "Name": "Masterwork Silverfrost Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Masterwork Silverfrost Defense Soul Shield Primer",
+  "ID": 723798
+}, {
+  "Name": "Masterwork Silverfrost Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Masterwork Silverfrost Piercing Soul Shield Primer",
+  "ID": 723796
+}, {
+  "Name": "Sealed Crafted recipe",
+  "ID": 3300453
+}, {
+  "Name": "Octagonal Gem Fragments",
+  "ID": 0
+}, {
+  "Name": "Small Dragon Certificate",
+  "ID": 0
+}, {
+  "Name": "Acquired Taste Uniform",
+  "ID": 0
+}, {
+  "Name": "Artisanal Cinderlands Soul Shield Set",
+  "ID": 0
+}, {
+  "Name": "Artisanal Moonwater Soul Shield Set",
+  "ID": 0
+}, {
+  "Name": "Artisanal Silverfrost Provisions Box",
+  "ID": 0
+}, {
+  "Name": "Artisanal Viridian Coast Soul Shield Set",
+  "ID": 0
+}, {
+  "Name": "Artisnal Silverfrost Soul Shield Set",
+  "ID": 0
+}, {
+  "Name": "Brilliant Heptagonal Diamond Pouch",
+  "ID": 0
+}, {
+  "Name": "Brilliant Octagonal Diamond Pouch",
+  "ID": 0
+}, {
+  "Name": "Cinderlands First Aid Kit",
+  "ID": 0
+}, {
+  "Name": "Cinderlands Provisions",
+  "ID": 0
+}, {
+  "Name": "Classic Spectacles",
+  "ID": 0
+}, {
+  "Name": "Crafted Recipe",
+  "ID": 0
+}, {
+  "Name": "Earthseer Uniform",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Blight Illusion Bracers Chest",
+  "ID": 3300691
+}, {
+  "Name": "Forgekeeper Blight Illusion Dagger Chest",
+  "ID": 4200022
+}, {
+  "Name": "Forgekeeper Blight Illusion Staff Chest",
+  "ID": 4200019
+}, {
+  "Name": "Forgekeeper Infernal Illusion Bangle Chest",
+  "ID": 4200028
+}, {
+  "Name": "Forgekeeper Infernal Illusion Bracers Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Pirate Illusion Axe Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Pirate Illusion Bracers Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Pirate Illusion Dagger Chest",
+  "ID": 4200046
+}, {
+  "Name": "Forgekeeper Pirate Illusion Gauntlet Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Pirate Illusion Lynblade Chest",
+  "ID": 4200047
+}, {
+  "Name": "Forgekeeper Pirate Illusion Razor Chest",
+  "ID": 4200048
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Axe Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Bangle Chest",
+  "ID": 4200052
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Bracers Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Dagger Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Gauntlet Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Lynblade Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Razor Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Staff Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Scorpio Illusion Sword Chest",
+  "ID": 4200049
+}, {
+  "Name": "Forgekeeper Siren Illusion Axe Chest",
+  "ID": 4200037
+}, {
+  "Name": "Forgekeeper Siren Illusion Bangle Chest",
+  "ID": 4200036
+}, {
+  "Name": "Forgekeeper Siren Illusion Bracers Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Siren Illusion Dagger Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Siren Illusion Lynblade Chest",
+  "ID": 0
+}, {
+  "Name": "Forgekeeper Siren Illusion Razor Chest",
+  "ID": 4200040
+}, {
+  "Name": "Forgekeeper Siren Illusion Staff Chest",
+  "ID": 0
+}, {
+  "Name": "ForgeKeeper Uniform",
+  "ID": 0
+}, {
+  "Name": "Heptagonal Diamond Pouch",
+  "ID": 81418
+}, {
+  "Name": "Maestro Eyepatch",
+  "ID": 0
+}, {
+  "Name": "Master Chef Hat",
+  "ID": 0
+}, {
+  "Name": "Merry Potter Uniform",
+  "ID": 0
+}, {
+  "Name": "Moonwater Accuracy Provisions",
+  "ID": 0
+}, {
+  "Name": "Moonwater First Aid Kit",
+  "ID": 0
+}, {
+  "Name": "Moonwater Health Provisions",
+  "ID": 827342
+}, {
+  "Name": "Moonwater Piercing Provisions",
+  "ID": 0
+}, {
+  "Name": "Octagonal Diamond Pouch",
+  "ID": 81419
+}, {
+  "Name": "Pentagonal Diamond Pouch",
+  "ID": 81416
+}, {
+  "Name": "Potter Cap",
+  "ID": 0
+}, {
+  "Name": "Radiant Ring Uniform",
+  "ID": 0
+}, {
+  "Name": "Revitalizer",
+  "ID": 0
+}, {
+  "Name": "Righteous Way Headpiece",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Accuracy Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Defense Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Piercing Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Cinderlands Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Accuracy Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Defense Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Piercing Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Moonwater Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Accuracy Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Critical Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Defense Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Piercing Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Artisanal Viridian Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Crafted Cinderlands Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Crafted Cinderlands Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Crafted Moonwater Block Soul Shield Primer",
+  "ID": 822796
+}, {
+  "Name": "Sealed Crafted Silverfrost Critcal Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Crafted Viridian Block Soul Shield Primer",
+  "ID": 822768
+}, {
+  "Name": "Sealed Crafted Viridian Evasion Soul Shield Primer",
+  "ID": 822769
+}, {
+  "Name": "Sealed Crafted Viridian Piercing Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Accuracy Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Critical Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Defense Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Piercing Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Masterwork Silverfrost Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Accuracy Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Block Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Defense Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Evasion Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Sealed Silverfrost Soul Warden Reflex Soul Shield Primer",
+  "ID": 0
+}, {
+  "Name": "Silver Cauldron Uniform",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Accuracy Provisions",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Critical Provisions",
+  "ID": 0
+}, {
+  "Name": "Silverfrost First Aid Kit",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Health Provisions",
+  "ID": 0
+}, {
+  "Name": "Silverfrost Piercing Provisions",
+  "ID": 0
+}, {
+  "Name": "Soul Warden Headpiece",
+  "ID": 0
+}, {
+  "Name": "Soul Warden Uniform",
+  "ID": 0
+}, {
+  "Name": "Sparkling Heptagonal Diamond Pouch",
+  "ID": 0
+}, {
+  "Name": "Sparkling Hexagonal Diamond Pouch",
+  "ID": 0
+}, {
+  "Name": "Sparkling Pentagonal Diamond Pouch",
+  "ID": 0
+}, {
+  "Name": "True Friend",
+  "ID": 3300205
+}, {
+  "Name": "Unsealing Charms",
+  "ID": 0
+}, {
+  "Name": "Viridian First Aid Kit",
+  "ID": 0
+}, {
+  "Name": "Viridian Provisions",
+  "ID": 0
+}, {
+  "Name": "Woven Headband",
+  "ID": 0
+}]

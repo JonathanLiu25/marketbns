@@ -1,9 +1,15 @@
 import React from "react";
 import ItemRow from "./ItemRow";
 
-const ItemBody = ({ items }) => (
+const ItemBody = props => (
   <tbody>
-    {items.length && items.map((item, itemIdx) => <ItemRow item={item} key={`item-row-${itemIdx}`} />)}
+    {props.items.length && props.items.map((item, itemIdx) => {
+      if (props.showAll) item.show = true;
+      if (itemIdx === 0) item.show = true;
+      return (<ItemRow
+        item={item}
+        key={`item-row-${itemIdx}`} />);
+    })}
   </tbody>
 );
 

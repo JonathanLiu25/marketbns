@@ -1,5 +1,5 @@
-tr .text {
-  width: 100%;
+.items {
+  margin: 20px;
 }
 
 .listMarket {
@@ -9,11 +9,17 @@ tr .text {
   margin-left: auto;
   margin-right: auto;
   background: #DCDCDC;
-  border-radius: 16px;
+  border: 5px solid #DCDCDC;
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 14px 10px;
 }
 
-
-/* icon box/border  */
+tr {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 
 .iconCell {
   display: block;
@@ -25,9 +31,32 @@ tr .text {
   border-radius: 11px;
 }
 
+.iconImg {
+  margin: 0;
+  border-radius: 10px;
+  max-width: none !important;
+  width: 46px !important;
+  height: 46px !important;
+}
+
+.iconCell .amount {
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+  text-align: right;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Droid Sans", Arial, Helvetica, Sans-serif, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
+}
+
+tr .text {
+  width: 100%;
+}
+
 tr .text,
 .price {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 
@@ -111,12 +140,6 @@ td {
   padding: 0;
 }
 
-tr {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
 .listMarket tbody td .name {
   /*item name */
   display: block;
@@ -141,20 +164,6 @@ tr {
   text-align: left;
 }
 
-
-/*amount number*/
-
-td .num {
-  position: absolute;
-  bottom: 2px;
-  right: 6px;
-  text-align: right;
-  color: #fff;
-  font-size: 12px;
-  font-family: "Droid Sans", Arial, Helvetica, Sans-serif, sans-serif;
-  text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
-}
-
 .price {
   padding: 0 10px;
   margin: 0;
@@ -173,14 +182,6 @@ td .num {
 .total>span:first-child,
 .unit>span:first-child {
   width: auto
-}
-
-.price dl dt {
-  display: none
-}
-
-.listMarket tbody td .name.noneAttribute {
-  padding-top: 2px
 }
 
 .price span>span {
@@ -209,14 +210,6 @@ td .num {
   background-position: -30px -28px
 }
 
-.gold .silver .bronze {
-  color: #fffa90;
-}
-
-tr .text {
-  width: 100%;
-}
-
 .name,
 .attribute,
 .price,
@@ -229,55 +222,19 @@ tbody {
   vertical-align: middle;
 }
 
-
-/*TABLE STUFF BELOW*/
-
-.listMarket {
-  display: table;
-  table-layout: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background: #DCDCDC;
-  border-radius: 10px;
-  border: 5px solid #DCDCDC;
-  border-collapse: separate;
-  border-spacing: 14px 10px;
-}
-
-.iconImg {
-  /*icon */
-  margin: 0;
-  border-radius: 10px;
-  max-width: none !important;
-  width: 46px !important;
-  height: 46px !important;
-}
-
-
-/* icon box/border  */
-
-tr .text,
-.price {
-  border-radius: 10px;
-}
-
 tr:not(.show) {
   display: none;
 }
 
-.items {
-  margin: 20px;
-}
-
-.price-green {
+.bg-green {
   background-color: green;
 }
 
-.price-orange {
+.bg-orange {
   background-color: orange;
 }
 
-.price-red {
+.bg-red {
   background-color: red;
 }
 
@@ -294,13 +251,31 @@ tr:not(.show) {
 
 .search-form {
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: row;
 }
 
 .form-group {
+  display: flex;
+  flex-direction: row;
   margin: 0 10px;
 }
 
 .input-price {
   width: 60px;
+}
+
+.typeahead-selector {
+  position: absolute;
+  z-index: 1;
+  background: lightgray;
+}
+
+.typeahead-selector .hover {
+  background: white;
+}
+
+.item-price-form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }

@@ -1,33 +1,30 @@
 const router = require("express").Router();
-const request = require("request");
-const { JSDOM } = require("jsdom");
-const html2json = require("html2json").html2json;
-const Items = require("../models/Items");
+const Items = require("../models/Items.js");
+const itemRequest = require("./itemRequest.js");
 
-// start request time but set it back 10000 ms
+// start request time but set it back 10 seconds
 let lastRequestTime = Date.now() - 10000;
 let text = [];
-let tempText = [];
 
 router.get("/", (req, res, next) => {
+  // const fs = require("fs");
+  // fs.writeFile("./all_item_names.json", `{ "items": [${require("../all_items.json").map(item => `"${item.Name}"`)}]}`, err => {
+  //   if (err) throw err;
+  // });
   // waits 9 seconds before making another request
   // client sends a request every 10 seconds, but 9 seconds is to account for latency
   if (Date.now() - lastRequestTime < 9000) {
     res.send(text);
   } else {
     lastRequestTime = Date.now();
-    tempText = [];
 
     Items.findAll()
       .then(allItems => {
-        const requests = allItems.map(item => {
-          const url = `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`;
-          return new Promise(resolveCb => newRequest(url, item, resolveCb));
-        });
+        const requests = allItems.map(item => new Promise(resolveCb => itemRequest(item, resolveCb)));
 
         Promise.all(requests)
-          .then(() => {
-            text = [...tempText];
+          .then(items => {
+            text = items;
             res.send(text);
           })
           .catch(next);
@@ -51,13 +48,23 @@ router.post("/", (req, res, next) => {
           exact: req.body.exact,
           buy: req.body.buy || item.buy,
           cheap: req.body.cheap || item.cheap,
-          sell: req.body.sell || item.sell
+          sell: req.body.sell !== 999999999 ? req.body.sell : item.sell
         };
-        item.update(updateTo)
+        return item.update(updateTo)
           .then(updatedItem => res.json(updatedItem))
           .catch(next);
       }
     })
+    .catch(next);
+});
+
+router.get("/:name", (req, res, next) => {
+  const item = { name: req.params.name, exact: req.query.exact };
+  console.log(item);
+  const itemData = new Promise(resolveCb => itemRequest(item, resolveCb));
+
+  Promise.resolve(itemData)
+    .then(foundItem => res.send(foundItem))
     .catch(next);
 });
 
@@ -84,61 +91,5 @@ router.delete("/:name", (req, res, next) => {
     })
     .catch(next);
 });
-
-function newRequest(url, item, resolveCb, retries = 0, maxRetries = 5) {
-  request(url, (err, response, body) => {
-    if (err) {
-      tempText[item.id - 1] = [err];
-      resolveCb();
-    } else {
-      const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
-
-      if (listMarket.getElementsByClassName("emptyResult").length && retries < maxRetries) {
-        newRequest(url, item, resolveCb, ++retries);
-      } else if (retries >= maxRetries) {
-        tempText[item.id - 1] = [{ show: true, info: item, price: { total: {} } }];
-        resolveCb();
-      } else {
-        const marketHTML = listMarket.innerHTML.replace(/\n[\s]*/g, "");
-        convertToObject(marketHTML, item);
-        resolveCb();
-      }
-    }
-  });
-}
-
-function convertToObject(marketHTML, item) {
-  const marketObject = html2json(marketHTML);
-  const rows = marketObject.child[0].child;
-  const tBody = [];
-
-  for (var i = 0; i < rows.length; i++) {
-    tBody[i] = {
-      info: item,
-      show: i === 0, // show the first row
-      grade: rows[i].child[1].attr.class[1], // determines item text color
-      src: rows[i].child[0].child[0].attr.src, // image source
-      alt: Array.isArray(rows[i].child[0].child[0].attr.alt) ? rows[i].child[0].child[0].attr.alt.join(" ") : rows[i].child[0].child[0].attr.alt,
-      amount: rows[i].child[0].child[1] ? rows[i].child[0].child[1].child[0].text : 1,
-      price: getPrice(rows[i].child[2])
-    };
-  }
-
-  tempText[item.id - 1] = tBody;
-}
-
-function getPrice(prices) {
-  const price = {};
-  const bulk = prices.child[0].attr.class;
-  price[bulk] = {};
-  price.total = {};
-
-  for (var i = 0; i < 3; i++) {
-    if (prices.child[0].child[i]) price[bulk][prices.child[0].child[i].attr.class] = prices.child[0].child[i].child[0].text;
-    if (prices.child[1] && prices.child[1].child[i]) price.total[prices.child[1].child[i].attr.class] = prices.child[1].child[i].child[0].text;
-  }
-
-  return price;
-}
 
 module.exports = router;

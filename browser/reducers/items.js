@@ -23,27 +23,12 @@ function itemsRequest(dispatch) {
     .catch(console.error);
 }
 
-export const addItem = item =>
-  dispatch =>
-    axios.post("/items", item)
-      .catch(console.error);
-
-export const changeItem = item =>
-  dispatch =>
-    axios.put(`/items/${item.id}`, item)
-      .catch(console.error);
-
-export const deleteItem = itemId =>
-  dispatch =>
-    axios.delete(`/items/${itemId}`)
-      .catch(console.error);
-
 // REDUCER
 const initialState = {
   allItems: []
 };
 
-const itemReducer = (state = initialState, action) => {
+const itemsReducer = (state = initialState, action) => {
   const newState = Object.assign({}, state);
 
   switch (action.type) {
@@ -57,4 +42,4 @@ const itemReducer = (state = initialState, action) => {
   return newState;
 };
 
-export default itemReducer;
+export default itemsReducer;

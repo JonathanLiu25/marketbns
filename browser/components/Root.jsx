@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import Footer from "./Footer";
 
-const Root = ({ children }) => (
+const Root = props => (
   <div id="app">
     <Navbar />
-    <SearchBar />
-    {children}
+    <SearchBar {...props} />
+    {props.children}
     <Footer />
   </div>
 );

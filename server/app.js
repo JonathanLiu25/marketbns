@@ -12,6 +12,8 @@ app.use("/items", require("./routes.js"));
 
 app.use(express.static(resolve(__dirname, "..", "public")));
 
+app.use("/", (req, res, next) => { res.sendFile(resolve(__dirname, "..", "public", "index.html")); });
+
 const port = process.env.PORT || 3000;
 
 if (module === require.main) {
