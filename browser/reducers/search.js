@@ -1,11 +1,11 @@
 // ACTION TYPE
-export const SET_SEARCH_ITEM = "SET_SEARCH_ITEM";
+export const SET_ITEM_NAME = "SET_ITEM_NAME";
 export const SET_EXACT = "SET_EXACT";
 export const SET_NON_EXACT = "SET_NON_EXACT";
 
 // ACTION CREATOR
-export const searchForItem = itemName => ({
-  type: SET_SEARCH_ITEM,
+export const setItemName = itemName => ({
+  type: SET_ITEM_NAME,
   itemName
 });
 
@@ -20,7 +20,7 @@ export const setNonExactItem = () => ({
 // THUNK
 export const setSearchItem = (itemName) =>
   dispatch =>
-    dispatch(searchForItem(itemName));
+    dispatch(setItemName(itemName));
 
 export const setExact = () =>
   dispatch =>
@@ -40,7 +40,7 @@ const searchReducer = (state = initialState, action) => {
   const newState = Object.assign({}, state);
 
   switch (action.type) {
-    case SET_SEARCH_ITEM:
+    case SET_ITEM_NAME:
       newState.itemName = action.itemName;
       break;
     case SET_EXACT:

@@ -4,6 +4,7 @@ import Loading from "./Loading.jsx";
 import ItemBody from "./ItemBody.jsx";
 import ItemChangeForm from "./ItemChangeForm.jsx";
 import { getItem, addItem, changeItem, deleteItem } from "../reducers/item";
+import { setSearchItem, setExact } from "../reducers/search.js";
 
 class LocalContainer extends React.Component {
   constructor(props) {
@@ -14,7 +15,14 @@ class LocalContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getItem(this.state.name, this.props.exact);
+    this.props.setSearchItem(this.state.name);
+    const exactSearch = this.props.location.search;
+    if (exactSearch && exactSearch.indexOf("?exact=") !== -1) {
+      this.props.setExact();
+      this.props.getItem(this.state.name, 1);
+    } else {
+      this.props.getItem(this.state.name, 0);
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -47,9 +55,12 @@ const SingleItem = props => (
   </div>
 );
 
-const mapStateToProps = state => ({ item: state.item, exact: state.search.exact });
+const mapStateToProps = state => ({
+  item: state.item,
+  exact: state.search.exact
+});
 
-const mapDispatchToProps = { getItem, addItem, changeItem, deleteItem };
+const mapDispatchToProps = { getItem, addItem, changeItem, deleteItem, setSearchItem, setExact };
 
 const SingleItemContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 

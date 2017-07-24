@@ -1,20 +1,22 @@
 import React from "react";
 import { connect } from "react-redux";
 
+const initialState = {
+  buyGold: 0,
+  buySilver: 0,
+  buyBronze: 0,
+  cheapGold: 0,
+  cheapSilver: 0,
+  cheapBronze: 0,
+  sellGold: 99999,
+  sellSilver: 99,
+  sellBronze: 99
+};
+
 class LocalContainer extends React.Component {
   constructor() {
     super();
-    this.state = {
-      buyGold: 0,
-      buySilver: 0,
-      buyBronze: 0,
-      cheapGold: 0,
-      cheapSilver: 0,
-      cheapBronze: 0,
-      sellGold: 99999,
-      sellSilver: 99,
-      sellBronze: 99
-    };
+    this.state = Object.assign({}, initialState);
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,12 +34,12 @@ class LocalContainer extends React.Component {
       sell: this.state.sellGold * 10000 + this.state.sellSilver * 100 + this.state.sellBronze
     };
     this.props.changeItem(changedItem);
-    this.setState({ buyGold: 0, buySilver: 0, buyBronze: 0, cheapGold: 0, cheapSilver: 0, cheapBronze: 0, sellGold: 99999, sellSilver: 99, sellBronze: 99 });
+    this.setState(initialState);
   }
 
   render() {
     return (
-      <ItemChangeForm />
+      <ItemChangeForm {...this.props} />
     );
   }
 }

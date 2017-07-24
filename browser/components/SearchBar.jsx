@@ -1,19 +1,42 @@
 import React from "react";
 import { connect } from "react-redux";
 import { setSearchItem, setExact, setNonExact } from "../reducers/search.js";
-import { Typeahead } from "react-typeahead";
-import allItems from "../../all_item_names.json";
+import AutoSuggest from "react-autosuggest";
+import allItems from "../../all_items.json";
+
+// Teach Autosuggest how to calculate suggestions for any given input value.
+const getSuggestions = value => {
+  const inputValue = value.trim().toLowerCase();
+  const inputLength = inputValue.length;
+
+  return inputLength === 0 ? [] : allItems.filter(item =>
+    item.Name.toLowerCase().slice(0, inputLength) === inputValue
+  );
+};
+
+const getSuggestionValue = suggestion => suggestion.Name;
+
+const renderSuggestion = suggestion => (
+  <div>
+    {suggestion.Name}
+  </div>
+);
 
 class LocalContainer extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = {
+      suggestions: []
+    };
 
-    this.handleSearch = this.handleSearch.bind(this);
+    this.handleOptionSelect = this.handleOptionSelect.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleSuggestions = this.handleSuggestions.bind(this);
+    this.clearSuggestions = this.clearSuggestions.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSearch(name) {
+  handleOptionSelect(name) {
     this.props.setSearchItem(name);
     this.props.setExact();
 
@@ -29,6 +52,14 @@ class LocalContainer extends React.Component {
     }
   }
 
+  handleSuggestions({ value }) {
+    this.setState({ suggestions: getSuggestions(value) });
+  }
+
+  clearSuggestions() {
+    this.setState({ suggestions: [] });
+  }
+
   handleSubmit(event) {
     event.preventDefault();
 
@@ -39,8 +70,11 @@ class LocalContainer extends React.Component {
     return (
       <SearchBar
         {...this.props}
-        handleSearch={this.handleSearch}
+        {...this.state}
+        handleOptionSelect={this.handleOptionSelect}
         handleChange={this.handleChange}
+        handleSuggestions={this.handleSuggestions}
+        clearSuggestions={this.clearSuggestions}
         handleSubmit={this.handleSubmit}
       />
     );
@@ -52,16 +86,27 @@ const SearchBar = props => (
     <form className="search-form" onSubmit={props.handleSubmit}>
       <div className="form-group">
         <label>Item: </label>
-        <Typeahead
+        <AutoSuggest
           inputProps={{
-            name: "name"
+            name: "name",
+            value: props.itemName,
+            onChange: props.handleChange
+          }}
+          suggestions={props.suggestions}
+          onSuggestionsFetchRequested={props.handleSuggestions}
+          onSuggestionsClearRequested={props.clearSuggestions}
+          getSuggestionValue={getSuggestionValue}
+          renderSuggestion={renderSuggestion} />
+        {/* <Typeahead
+          inputProps={{
+            name: "name",
+            value: props.name
           }}
           minLength={2}
           maxVisible={5}
-          value={props.itemName}
           options={allItems.items}
           onChange={props.handleChange}
-          onOptionSelected={props.handleSearch} />
+          onOptionSelected={props.handleOptionSelect} /> */}
       </div>
       <div className="form-group">
         <label>Exact: </label>
