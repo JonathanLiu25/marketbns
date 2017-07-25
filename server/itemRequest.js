@@ -31,7 +31,6 @@ function convertToObject(marketHTML, item) {
   for (var i = 0; i < rows.length; i++) {
     tBody[i] = {
       info: item,
-      // show: i === 0, // show the first row
       grade: rows[i].child[1].attr.class[1], // determines item text color
       src: rows[i].child[0].child[0].attr.src, // image source
       alt: Array.isArray(rows[i].child[0].child[0].attr.alt) ? rows[i].child[0].child[0].attr.alt.join(" ") : rows[i].child[0].child[0].attr.alt,

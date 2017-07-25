@@ -7,10 +7,6 @@ let lastRequestTime = Date.now() - 10000;
 let text = [];
 
 router.get("/", (req, res, next) => {
-  // const fs = require("fs");
-  // fs.writeFile("./all_item_names.json", `{ "items": [${require("../all_items.json").map(item => `"${item.Name}"`)}]}`, err => {
-  //   if (err) throw err;
-  // });
   // waits 9 seconds before making another request
   // client sends a request every 10 seconds, but 9 seconds is to account for latency
   if (Date.now() - lastRequestTime < 9000) {
@@ -31,6 +27,28 @@ router.get("/", (req, res, next) => {
       })
       .catch(next);
   }
+});
+
+router.get("/:name", (req, res, next) => {
+  let item = { name: req.params.name, exact: req.query.exact };
+  const findItem = new Promise(resolveCb => {
+    return Items.findOne({ where: item })
+      .then(foundItem => {
+        if (foundItem) resolveCb(foundItem);
+        resolveCb(item);
+      })
+      .catch(next);
+  });
+
+  Promise.resolve(findItem)
+    .then(resolveItem => {
+      const itemData = new Promise(resolveCb => itemRequest(resolveItem, resolveCb));
+
+      return Promise.resolve(itemData)
+        .then(foundItem => res.send(foundItem))
+        .catch(next);
+    })
+    .catch(next);
 });
 
 router.post("/", (req, res, next) => {
@@ -55,15 +73,6 @@ router.post("/", (req, res, next) => {
           .catch(next);
       }
     })
-    .catch(next);
-});
-
-router.get("/:name", (req, res, next) => {
-  const item = { name: req.params.name, exact: req.query.exact };
-  const itemData = new Promise(resolveCb => itemRequest(item, resolveCb));
-
-  Promise.resolve(itemData)
-    .then(foundItem => res.send(foundItem))
     .catch(next);
 });
 
