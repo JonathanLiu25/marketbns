@@ -261,6 +261,7 @@ tr:not(.show) {
 }
 
 .react-autosuggest__input {
+  width: 300px;
   margin: 0 5px;
   padding: 0 15px;
 }

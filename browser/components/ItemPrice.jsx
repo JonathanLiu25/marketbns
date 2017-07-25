@@ -1,9 +1,7 @@
 import React from "react";
+import Audio from "./Audio.js";
 
 const ItemRow = ({ price, info }) => {
-  const buyAmount = info.buy;
-  const cheapAmount = info.cheap;
-  const sellAmount = info.sellAmount;
 
   const unitPrice = price.unit
     ?
@@ -13,11 +11,12 @@ const ItemRow = ({ price, info }) => {
 
   let color = "";
 
-  if (unitPrice <= buyAmount) {
+  if (unitPrice <= info.buy) {
     color = "green";
-  } else if (unitPrice <= cheapAmount) {
+    Audio.play();
+  } else if (unitPrice <= info.cheap) {
     color = "orange";
-  } else if (unitPrice > sellAmount) {
+  } else if (unitPrice > info.sellAmount) {
     color = "red";
   }
 

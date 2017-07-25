@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import Loading from "./Loading.jsx";
 import ItemBody from "./ItemBody.jsx";
-import Audio from "./Audio.jsx";
 import { getItems, stopItemsRequest } from "../reducers/items.js";
 
 class LocalContainer extends React.Component {
