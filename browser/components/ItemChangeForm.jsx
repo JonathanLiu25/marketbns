@@ -24,6 +24,24 @@ class LocalContainer extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.item !== this.props.item && nextProps.item.length && nextProps.item[0].info.id) {
+      const itemInfo = nextProps.item[0].info;
+      const newPrice = {
+        buyGold: Math.floor(itemInfo.buy / 10000),
+        buySilver: Math.floor(itemInfo.buy / 100) % 100,
+        buyBronze: itemInfo.buy % 100,
+        cheapGold: Math.floor(itemInfo.cheap / 10000),
+        cheapSilver: Math.floor(itemInfo.cheap / 100) % 100,
+        cheapBronze: itemInfo.cheap % 100,
+        sellGold: Math.floor(itemInfo.sell / 10000),
+        sellSilver: Math.floor(itemInfo.sell / 100) % 100,
+        sellBronze: itemInfo.sell % 100
+      };
+      this.setState(newPrice);
+    }
+  }
+
   makeItem() {
     return ({
       name: this.props.name,
@@ -44,7 +62,7 @@ class LocalContainer extends React.Component {
     if (event.target.name === "add-item") this.props.addItem(this.makeItem());
     if (event.target.name === "update-item") this.props.changeItem(this.makeItem());
     if (event.target.name === "delete-item") this.props.deleteItem({ name: this.props.name, exact: String(this.props.exact) });
-    this.setState(initialState);
+    // this.setState(initialState);
   }
 
   render() {
@@ -137,7 +155,11 @@ const ItemChangeForm = props => (
   </form>
 );
 
-const mapStateToProps = state => ({ name: state.search.itemName, exact: state.search.exact });
+const mapStateToProps = state => ({
+  name: state.search.itemName,
+  exact: state.search.exact,
+  item: state.item.singleItem
+});
 
 const mapDispatchToProps = { addItem, changeItem, deleteItem };
 
