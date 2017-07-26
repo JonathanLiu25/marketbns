@@ -10,8 +10,8 @@ const ItemRow = ({ item }) => (
           alt={item.alt}
           className="iconImg"
           src={item.src} />
+        {item.amount > 1 && <span className="amount">{item.amount}</span>}
       </Link>
-      {item.amount > 1 && <span className="amount">{item.amount}</span>}
     </td>
 
     <td className={`text ${item.grade}`}>
