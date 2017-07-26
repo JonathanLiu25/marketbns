@@ -2,25 +2,33 @@ const request = require("request");
 const { JSDOM } = require("jsdom");
 const { html2json } = require("html2json");
 
+const itemStorage = {};
+
 function itemRequest(item, resolveCb, retries = 0, maxRetries = 5) {
-  const url = `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`;
+  // waits 9 seconds before making another request
+  // client sends a request every 10 seconds, but 9 seconds is to account for latency
+  if (itemStorage[item.name] && Date.now() - itemStorage[item.name].lastRequestTime < 9000) {
+    resolveCb(itemStorage[item.name].tBody);
+  } else {
+    const url = `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`;
 
-  return request(url, (err, response, body) => {
-    if (err) {
-      resolveCb([err]);
-    } else {
-      const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
-
-      if (listMarket.getElementsByClassName("emptyResult").length && retries < maxRetries) {
-        itemRequest(item, resolveCb, ++retries);
-      } else if (retries >= maxRetries) {
-        resolveCb([{ show: true, info: item, price: { total: {} } }]);
+    return request(url, (err, response, body) => {
+      if (err) {
+        resolveCb([err]);
       } else {
-        const marketHTML = listMarket.innerHTML.replace(/\n[\s]*/g, "");
-        resolveCb(convertToObject(marketHTML, item));
+        const listMarket = new JSDOM(body).window.document.getElementById("listMarket");
+
+        if (listMarket.getElementsByClassName("emptyResult").length && retries < maxRetries) {
+          itemRequest(item, resolveCb, ++retries);
+        } else if (retries >= maxRetries) {
+          resolveCb([{ show: true, info: item, price: { total: {} } }]);
+        } else {
+          const marketHTML = listMarket.innerHTML.replace(/\n[\s]*/g, "");
+          resolveCb(convertToObject(marketHTML, item));
+        }
       }
-    }
-  });
+    });
+  }
 }
 
 function convertToObject(marketHTML, item) {
@@ -39,6 +47,7 @@ function convertToObject(marketHTML, item) {
     };
   }
 
+  itemStorage[item.name] = { tBody, lastRequestTime: Date.now() };
   return tBody;
 }
 

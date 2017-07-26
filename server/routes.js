@@ -2,31 +2,16 @@ const router = require("express").Router();
 const Items = require("../models/Items.js");
 const itemRequest = require("./itemRequest.js");
 
-// start request time but set it back 10 seconds
-let lastRequestTime = Date.now() - 10000;
-let text = [];
-
 router.get("/", (req, res, next) => {
-  // waits 9 seconds before making another request
-  // client sends a request every 10 seconds, but 9 seconds is to account for latency
-  if (Date.now() - lastRequestTime < 9000) {
-    res.send(text);
-  } else {
-    lastRequestTime = Date.now();
+  Items.findAll()
+    .then(allItems => {
+      const requests = allItems.map(item => new Promise(resolveCb => itemRequest(item, resolveCb)));
 
-    Items.findAll()
-      .then(allItems => {
-        const requests = allItems.map(item => new Promise(resolveCb => itemRequest(item, resolveCb)));
-
-        Promise.all(requests)
-          .then(items => {
-            text = items;
-            res.send(text);
-          })
-          .catch(next);
-      })
-      .catch(next);
-  }
+      Promise.all(requests)
+        .then(items => res.send(items))
+        .catch(next);
+    })
+    .catch(next);
 });
 
 router.get("/:name", (req, res, next) => {
