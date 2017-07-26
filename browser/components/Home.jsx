@@ -3,10 +3,13 @@ import { connect } from "react-redux";
 import Loading from "./Loading.jsx";
 import ItemBody from "./ItemBody.jsx";
 import { getItems, stopItemsRequest } from "../reducers/items.js";
+import { setSearchItem, setNonExact } from "../reducers/search.js";
 
 class LocalContainer extends React.Component {
   componentDidMount() {
     this.props.getItems();
+    this.props.setSearchItem("");
+    this.props.setNonExact();
   }
 
   componentWillUnmount() {
@@ -36,7 +39,7 @@ const Home = props => (
 
 const mapStateToProps = state => ({ items: state.items });
 
-const mapDispatchToProps = { getItems, stopItemsRequest };
+const mapDispatchToProps = { getItems, stopItemsRequest, setSearchItem, setNonExact };
 
 const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(LocalContainer);
 
