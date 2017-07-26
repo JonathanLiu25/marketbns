@@ -15,12 +15,6 @@
   border-spacing: 14px 10px;
 }
 
-tr {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
 .iconCell {
   display: block;
   position: relative;
@@ -28,7 +22,7 @@ tr {
   padding: 0;
   width: 46px;
   height: 46px;
-  border-radius: 11px;
+  border-radius: 10px;
 }
 
 .iconImg {
@@ -115,18 +109,9 @@ tr .text,
   color: #8A7AFF
 }
 
-
-/*Change cell color on mouseover*/
-
-
-/* 
-tr:hover td,
-tr:hover th {
-  background: grey;
-} */
-
-
-/* cell background,round edges */
+tr:hover td {
+  opacity: 0.8;
+}
 
 td {
   /* generic info on name/additional info */
@@ -210,18 +195,6 @@ td {
   background-position: -30px -28px
 }
 
-.name,
-.attribute,
-.price,
-.iconCell,
-td,
-tr,
-.listMarket,
-img,
-tbody {
-  vertical-align: middle;
-}
-
 tr:not(.show) {
   display: none;
 }
@@ -292,4 +265,8 @@ tr:not(.show) {
 
 .nav {
   margin: 10px 30px;
+}
+
+a:link {
+  text-decoration: none;
 }
