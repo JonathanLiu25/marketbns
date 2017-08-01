@@ -44,7 +44,7 @@ class LocalContainer extends React.Component {
 
   makeItem() {
     return ({
-      name: this.props.name,
+      name: this.props.itemName,
       exact: String(this.props.exact),
       buy: this.state.buyGold * 10000 + this.state.buySilver * 100 + this.state.buyBronze,
       cheap: this.state.cheapGold * 10000 + this.state.cheapSilver * 100 + this.state.cheapBronze,
@@ -62,7 +62,6 @@ class LocalContainer extends React.Component {
     if (event.target.name === "add-item") this.props.addItem(this.makeItem());
     if (event.target.name === "update-item") this.props.changeItem(this.makeItem());
     if (event.target.name === "delete-item") this.props.deleteItem({ name: this.props.name, exact: String(this.props.exact) });
-    // this.setState(initialState);
   }
 
   render() {
@@ -70,7 +69,8 @@ class LocalContainer extends React.Component {
       <ItemChangeForm
         {...this.state}
         handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit} />
+        handleSubmit={this.handleSubmit}
+      />
     );
   }
 }
@@ -156,7 +156,7 @@ const ItemChangeForm = props => (
 );
 
 const mapStateToProps = state => ({
-  name: state.search.itemName,
+  itemName: state.search.itemName,
   exact: state.search.exact,
   item: state.item.singleItem
 });

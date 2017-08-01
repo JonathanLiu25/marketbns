@@ -18,6 +18,8 @@ const getSuggestionValue = suggestion => suggestion.Name;
 
 const renderSuggestion = suggestion => <span>{suggestion.Name}</span>;
 
+const shouldRenderSuggestions = value => value.trim().length >= 3; // at least 3 characters to render
+
 class LocalContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -85,7 +87,9 @@ const SearchBar = props => (
             name: "name",
             value: props.itemName,
             onChange: props.handleChange
-          }} />
+          }}
+          shouldRenderSuggestions={shouldRenderSuggestions}
+        />
       </div>
       <div className="form-group">
         <label>Exact: </label>
