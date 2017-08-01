@@ -22,23 +22,26 @@ class LocalContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
       suggestions: []
     };
 
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleExactCheckbox = this.handleExactCheckbox.bind(this);
-    this.handleSuggestions = this.handleSuggestions.bind(this);
-    this.clearSuggestions = this.clearSuggestions.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.itemName !== this.state.name) this.setState({ name: nextProps.itemName });
+  onSuggestionsFetchRequested({ value }) {
+    this.setState({ suggestions: getSuggestions(value) });
+  }
+
+  onSuggestionsClearRequested() {
+    this.setState({ suggestions: [] });
   }
 
   handleChange(event, { newValue }) {
-    this.setState({ name: newValue });
+    this.props.setSearchItem(newValue);
   }
 
   handleExactCheckbox() {
@@ -46,19 +49,9 @@ class LocalContainer extends React.Component {
     else this.props.setExact();
   }
 
-  handleSuggestions({ value }) {
-    this.setState({ suggestions: getSuggestions(value) });
-  }
-
-  clearSuggestions() {
-    this.setState({ suggestions: [] });
-  }
-
   handleSubmit(event) {
     event.preventDefault();
-    this.props.setSearchItem(this.state.name);
-
-    this.props.history.push(`/${this.state.name}?exact=${this.props.exact}`);
+    this.props.history.push(`/${this.props.itemName}?exact=${this.props.exact}`);
   }
 
   render() {
@@ -68,8 +61,8 @@ class LocalContainer extends React.Component {
         {...this.state}
         handleChange={this.handleChange}
         handleExactCheckbox={this.handleExactCheckbox}
-        handleSuggestions={this.handleSuggestions}
-        clearSuggestions={this.clearSuggestions}
+        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         handleSubmit={this.handleSubmit}
       />
     );
@@ -81,15 +74,16 @@ const SearchBar = props => (
     <form className="search-form" onSubmit={props.handleSubmit}>
       <div className="form-group">
         <label>Item: </label>
+        {/* see https://github.com/moroshko/react-autosuggest for props*/}
         <AutoSuggest
           suggestions={props.suggestions}
-          onSuggestionsFetchRequested={props.handleSuggestions}
-          onSuggestionsClearRequested={props.clearSuggestions}
+          onSuggestionsFetchRequested={props.onSuggestionsFetchRequested}
+          onSuggestionsClearRequested={props.onSuggestionsClearRequested}
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={renderSuggestion}
           inputProps={{
             name: "name",
-            value: props.name,
+            value: props.itemName,
             onChange: props.handleChange
           }} />
       </div>
