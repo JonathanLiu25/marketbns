@@ -3,15 +3,13 @@ import { Link } from "react-router-dom";
 import ItemPrice from "./ItemPrice.jsx";
 
 const ItemRow = ({ item }) => (
-  <div className={`tr ${item.show ? "show" : ""}`}>
+  <Link to={`/${item.info.name}?exact=${item.info.exact}`} className={`tr ${item.show ? "show" : ""}`}>
     <div className="td iconCell">
-      <Link to={`/${item.info.name}?exact=${item.info.exact}`}>
-        <img
-          alt={item.alt}
-          className="iconImg"
-          src={item.src} />
-        {item.amount > 1 && <span className="amount">{item.amount}</span>}
-      </Link>
+      <img
+        alt={item.alt}
+        className="iconImg"
+        src={item.src} />
+      {item.amount > 1 && <span className="amount">{item.amount}</span>}
     </div>
 
     <div className={`td text ${item.grade}`}>
@@ -21,7 +19,7 @@ const ItemRow = ({ item }) => (
     </div>
 
     <ItemPrice price={item.price} info={item.info} />
-  </div>
+  </Link>
 );
 
 export default ItemRow;
