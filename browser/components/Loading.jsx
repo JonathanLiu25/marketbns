@@ -1,13 +1,13 @@
 import React from "react";
 
 const Loading = () => (
-  <tbody>
-    <tr className="show">
-      <td className="loading">
+  <div className="tbody">
+    <div className="tr show">
+      <div className="td loading">
         <span>Loading items</span>
-      </td>
-    </tr>
-  </tbody>
+      </div>
+    </div>
+  </div>
 );
 
 export default Loading;

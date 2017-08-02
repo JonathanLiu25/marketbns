@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import ItemPrice from "./ItemPrice.jsx";
 
 const ItemRow = ({ item }) => (
-  <tr className={item.show ? "show" : ""}>
-    <td className="iconCell">
+  <div className={`tr ${item.show ? "show" : ""}`}>
+    <div className="td iconCell">
       <Link to={`/${item.info.name}?exact=${item.info.exact}`}>
         <img
           alt={item.alt}
@@ -12,16 +12,16 @@ const ItemRow = ({ item }) => (
           src={item.src} />
         {item.amount > 1 && <span className="amount">{item.amount}</span>}
       </Link>
-    </td>
+    </div>
 
-    <td className={`text ${item.grade}`}>
+    <div className={`td text ${item.grade}`}>
       <span className="name noneAttribute">
         {item.alt}
       </span>
-    </td>
+    </div>
 
     <ItemPrice price={item.price} info={item.info} />
-  </tr>
+  </div>
 );
 
 export default ItemRow;

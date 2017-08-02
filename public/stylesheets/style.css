@@ -15,6 +15,30 @@
   border-spacing: 14px 10px;
 }
 
+.tbody {
+  display: table-row-group;
+}
+
+.tr {
+  display: table-row;
+}
+
+.tr:hover {
+  opacity: 0.8;
+}
+
+.td {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 400;
+  white-space: nowrap;
+  background: #595959;
+  margin: 0;
+  padding: 0;
+}
+
 .iconCell {
   display: block;
   position: relative;
@@ -44,11 +68,11 @@
   text-shadow: rgba(0, 0, 0, 0.6) 0 0 3px, rgba(0, 0, 0, 0.6) 1px 1px 1px;
 }
 
-tr .text {
+.tr .text {
   width: 100%;
 }
 
-tr .text,
+.tr .text,
 .price {
   border-radius: 10px;
 }
@@ -109,23 +133,7 @@ tr .text,
   color: #8A7AFF
 }
 
-tr:hover td {
-  opacity: 0.8;
-}
-
-td {
-  /* generic info on name/additional info */
-  position: relative;
-  vertical-align: middle;
-  text-align: left;
-  font-weight: 400;
-  white-space: nowrap;
-  background: #595959;
-  margin: 0;
-  padding: 0;
-}
-
-.listMarket tbody td .name {
+.listMarket .tbody .td .name {
   /*item name */
   display: block;
   overflow: hidden;
@@ -136,7 +144,7 @@ td {
   margin: 0;
 }
 
-.listMarket tbody td .attribute {
+.listMarket .tbody .td .attribute {
   /* That one is for gems, the extra text n stuff  */
   display: block;
   padding: 1px 0 0;
@@ -195,7 +203,7 @@ td {
   background-position: -30px -28px
 }
 
-tr:not(.show) {
+.tr:not(.show) {
   display: none;
 }
 
@@ -216,6 +224,7 @@ tr:not(.show) {
   font-size: 19px;
   color: white;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .search {

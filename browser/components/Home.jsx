@@ -25,7 +25,7 @@ class LocalContainer extends React.Component {
 
 const Home = props => (
   <div className="items">
-    <table id="listMarket" className="listMarket">
+    <div id="listMarket" className="listMarket">
       {
         props.allItems.length
           ?
@@ -33,7 +33,7 @@ const Home = props => (
           :
           <Loading />
       }
-    </table>
+    </div>
   </div>
 );
 

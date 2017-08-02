@@ -44,7 +44,7 @@ class LocalContainer extends React.Component {
 const SingleItem = props => (
   <div className="items">
     <ItemChangeForm />
-    <table id="listMarket" className="listMarket">
+    <div id="listMarket" className="listMarket">
       {
         props.singleItem.length && !props.loading
           ?
@@ -52,7 +52,7 @@ const SingleItem = props => (
           :
           <Loading />
       }
-    </table>
+    </div>
   </div>
 );
 
