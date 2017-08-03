@@ -99,8 +99,8 @@ const SearchBar = props => (
           type="checkbox"
           checked={props.exact}
           onChange={props.handleExactCheckbox} />
-        <button type="submit">Search</button>
       </div>
+      <button type="submit">Search</button>
     </form >
   </div >
 );

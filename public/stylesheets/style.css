@@ -278,8 +278,11 @@ a:link {
   list-style-type: none;
   z-index: 1;
   background: lightgray;
+  height: 200px;
+  border-radius: 10px;
   margin: 5px;
   padding: 15px;
+  overflow: auto;
 }
 
 .react-autosuggest__suggestion--highlighted {
