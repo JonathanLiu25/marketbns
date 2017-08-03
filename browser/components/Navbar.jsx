@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import SearchBar from "./SearchBar.jsx";
 
-const Navbar = ({ loading }) => (
+const Navbar = ({ history, loading }) => (
   <nav className="nav">
     <Link to="/">Home</Link>
+    <SearchBar history={history} />
     {loading &&
       <div className="spinner">
         <div className="double-bounce1" />

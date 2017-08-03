@@ -75,7 +75,6 @@ const SearchBar = props => (
   <div className="search">
     <form className="search-form" onSubmit={props.handleSubmit}>
       <div className="form-group">
-        <label>Item: </label>
         {/* see https://github.com/moroshko/react-autosuggest for props*/}
         <AutoSuggest
           suggestions={props.suggestions}
@@ -86,6 +85,7 @@ const SearchBar = props => (
           inputProps={{
             name: "name",
             value: props.itemName,
+            placeholder: "Search",
             onChange: props.handleChange
           }}
           shouldRenderSuggestions={shouldRenderSuggestions}

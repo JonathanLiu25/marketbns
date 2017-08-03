@@ -227,8 +227,33 @@
   border-radius: 10px;
 }
 
+.item-price-form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.input-price {
+  width: 50px;
+  margin-left: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+/* Navbar */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px;
+}
+
 .search {
-  margin: 20px;
+  flex: 1;
+  margin: 0 20px;
 }
 
 .search-form {
@@ -261,33 +286,11 @@
   background: white;
 }
 
-.item-price-form {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
-}
-
-.input-price {
-  width: 50px;
-  margin-left: 10px;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-
-/* Navbar */
-
-.nav {
-  margin: 10px 30px;
-}
-
 
 /* LOADING SPINNER */
 
 .spinner {
-  float: right;
+  margin-left: 10px;
 }
 
 .double-bounce1,

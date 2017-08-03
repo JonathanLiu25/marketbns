@@ -5,8 +5,8 @@ import Footer from "./Footer.jsx";
 
 const Root = props => (
   <div id="app">
-    <Navbar />
-    <SearchBar {...props} />
+    <Navbar history={props.history} />
+    {/* <SearchBar {...props} /> */}
     {props.children}
     <Footer />
   </div>
