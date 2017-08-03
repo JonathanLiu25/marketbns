@@ -1,4 +1,5 @@
 import axios from "axios";
+import { setLoading, stopLoading } from "./loading.js";
 
 // ACTION TYPE
 export const SET_ITEMS = "SET_ITEMS";
@@ -19,9 +20,13 @@ export const getItems = () =>
   };
 
 function itemsRequest(dispatch) {
+  dispatch(setLoading());
   return axios.get("/items")
     .then(res => res.data)
-    .then(allItems => dispatch(setItems(allItems)))
+    .then(allItems => {
+      dispatch(setItems(allItems));
+      dispatch(stopLoading());
+    })
     .catch(console.error);
 }
 

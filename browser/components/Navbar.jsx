@@ -1,10 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Navbar = () => (
+const Navbar = ({ loading }) => (
   <nav className="nav">
-    <Link to="">BnS Market</Link>
+    <Link to="/">Home</Link>
+    {loading &&
+      <div className="spinner">
+        <div className="double-bounce1" />
+        <div className="double-bounce2" />
+      </div>
+    }
   </nav>
 );
 
-export default Navbar;
+const mapStateToProps = state => ({ loading: state.loading });
+
+const mapDispatchToProps = {};
+
+const NavbarContainer = connect(mapStateToProps, mapDispatchToProps)(Navbar);
+
+export default NavbarContainer;
