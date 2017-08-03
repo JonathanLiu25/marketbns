@@ -6,8 +6,8 @@ const itemStorage = {};
 
 function itemRequest(item, resolveCb, retries = 0, maxRetries = 5) {
   // waits 9 seconds before making another request
-  // client sends a request every 10 seconds, but 9 seconds is to account for latency
-  if (itemStorage[item.name] && Date.now() - itemStorage[item.name].lastRequestTime < 9000) {
+  // client sends a request every 10 seconds, but 5 seconds is to account for latency
+  if (itemStorage[item.name] && Date.now() - itemStorage[item.name].lastRequestTime < 5000) {
     resolveCb(itemStorage[item.name].tBody);
   } else {
     const url = `https://www.bns.academy/live-marketplace/?region=na&exact=${item.exact}&q=${item.name}`;
