@@ -12,8 +12,10 @@ const ItemRow = ({ price, info }) => {
   let color = "";
 
   if (unitPrice <= info.buy) {
-    color = "green";
-    Audio.play();
+    if (unitPrice) { // this prevents 0 and undefined since the market requires at least 1 copper
+      color = "green";
+      Audio.play();
+    }
   } else if (unitPrice <= info.cheap) {
     color = "orange";
   } else if (unitPrice > info.sellAmount) {

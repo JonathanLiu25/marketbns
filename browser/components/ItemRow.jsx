@@ -14,7 +14,7 @@ const ItemRow = ({ item }) => (
 
     <div className={`td text ${item.grade}`}>
       <span className="name noneAttribute">
-        {item.alt}
+        {item.alt || item.info.name}
       </span>
     </div>
 

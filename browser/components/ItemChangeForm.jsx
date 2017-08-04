@@ -61,7 +61,7 @@ class LocalContainer extends React.Component {
 
     if (event.target.name === "add-item") this.props.addItem(this.makeItem());
     if (event.target.name === "update-item") this.props.changeItem(this.makeItem());
-    if (event.target.name === "delete-item") this.props.deleteItem({ name: this.props.name, exact: String(this.props.exact) });
+    if (event.target.name === "delete-item") this.props.deleteItem({ name: this.props.itemName, exact: String(this.props.exact) });
   }
 
   render() {
