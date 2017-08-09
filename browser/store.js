@@ -4,15 +4,20 @@ import thunkMiddleware from "redux-thunk";
 import { createLogger } from "redux-logger";
 import rootReducer from "./reducers";
 
+let enhancer = applyMiddleware(thunkMiddleware);
 
-const store = createStore(
-  rootReducer,
-  composeWithDevTools(
+if (process.env.NODE_ENV !== "production") {
+  enhancer = composeWithDevTools(
     applyMiddleware(
       thunkMiddleware,
       createLogger({ collapsed: true })
     )
-  )
+  );
+}
+
+const store = createStore(
+  rootReducer,
+  enhancer
 );
 
 export default store;
